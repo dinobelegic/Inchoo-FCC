@@ -2,31 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grabsee - your frisbee web store</title>
+    <title>Product Name - Best place to get profi frisbee gear</title>
 </head>
-
 <body>
     <header>
-        <h1>
+        <a href="./index.html">
             Grabsee Logo
-        </h1>
+        </a>
 
         <ul>
             <li>
-                <button>Search</button>
+                <button><span class="icon-search"></span> Search</button>
 
                 <div>
                     <form>
                         <fieldset>
-                            <legend>Grabsee search form</legend>
-                            <label for="search">Enter here your search term</label>
-                            <input name="search" type="text">
+                            <legend tabindex="0">Grabsee search form</legend>
+                            <label tabindex="0" for="search">Enter here your search term</label>
+                            <input name="search" type="search" 
+                                    placeholder="Enter here your search term"
+                                    aria-label="Search through site content">
                             <button>Search it</button>
                         </fieldset>
                     </form>
 
-                    <button>Close</button>
+                    <button >Close</button>
                 </div>
             </li>
             <li>
@@ -49,11 +51,11 @@
                                 </h2>
             
                                 <dl>
-                                    <dt>Color</dt>
-                                    <dd>Black</dd>
-                                    <dt>Price</dt>
-                                    <dd>10$</dd>
-                                    <dt>Qty:</dt>
+                                    <dt tabindex="0">Color</dt>
+                                    <dd tabindex="0">Black</dd>
+                                    <dt tabindex="0">Price</dt>
+                                    <dd tabindex="0">10$</dd>
+                                    <dt tabindex="0">Qty:</dt>
                                     <dd>
                                         <form>
                                             <fieldset>
@@ -77,11 +79,11 @@
                                 </h2>
             
                                 <dl>
-                                    <dt>Color</dt>
-                                    <dd>Red</dd>
-                                    <dt>Price</dt>
-                                    <dd>12$</dd>
-                                    <dt>Qty:</dt>
+                                    <dt tabindex="0">Color</dt>
+                                    <dd tabindex="0">Red</dd>
+                                    <dt tabindex="0">Price</dt>
+                                    <dd tabindex="0">12$</dd>
+                                    <dt tabindex="0">Qty:</dt>
                                     <dd>
                                         <form>
                                             <fieldset>
@@ -100,8 +102,8 @@
                         <caption>Your Cart Totals table</caption>
                         <tbody>
                             <tr>
-                                <th>Subtotal</th>
-                                <td>$$</td>
+                                <th tabindex="0">Subtotal</th>
+                                <td tabindex="0">$$</td>
                             </tr>
                         </tbody>
                     </table>
@@ -114,7 +116,7 @@
                     <div>
                         <strong>You have no items in your shopping cart</strong>
                     </div>
-                </section>    
+                </section>
             </li>
             <li>
                 <button>Navigation Trigger</button>
@@ -125,7 +127,7 @@
                             <h2>Frisbees</h2>
 
                             <div>
-                                <h3>Ultimate Frisbees</h3>
+                                <h3 tabindex="0">Ultimate Frisbees</h3>
 
                                 <ul>
                                     <li><a href="">Innova Pulsar</a></li>
@@ -135,7 +137,7 @@
                             </div>
 
                             <div>
-                                <h3>Recreational</h3>
+                                <h3 tabindex="0">Recreational</h3>
 
                                 <ul>
                                     <li><a href="">Nite</a></li>
@@ -147,7 +149,7 @@
                                 <h3>Contact us</h3>
 
                                 <ul>
-                                    <li>Trg Slobode 6</li>
+                                    <li tabindex="0">Trg Slobode 6</li>
                                     <li><a href="tel:+385958811630">+385 95 8811630</a></li>
                                     <li><a href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
                                 </ul>
@@ -158,7 +160,7 @@
                             <h2>Clothing</h2>
 
                             <div>
-                                <h3>Ultimate Frisbees</h3>
+                                <h3 tabindex="0">Ultimate Frisbees</h3>
 
                                 <ul>
                                     <li><a href="">Innova Pulsar</a></li>
@@ -177,10 +179,10 @@
                             </div>
 
                             <div>
-                                <h3>Contact us</h3>
+                                <h3 tabindex="0">Contact us</h3>
 
                                 <ul>
-                                    <li>Trg Slobode 6</li>
+                                    <li tabindex="0">Trg Slobode 6</li>
                                     <li><a href="tel:+385958811630">+385 95 8811630</a></li>
                                     <li><a href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
                                 </ul>
@@ -199,145 +201,6 @@
             </li>
         </ul>
     </header>
-    <!--Breadcrumbs-->
-    <ul>
-        <li>Home</li>
-        <li>Frisbees</li>
-        <li>Ultimate Frisbee</li>
-    </ul>
     
-    <main>
-        <section>  
-            <div>
-                <picture>
-                    <source>
-                    <source>
-                    <img src="" alt="image">
-                </picture>
-
-                <ul>
-                    <li><h3>Item title</h3></li>
-                    <li>In Stock</li>
-                    <li>SKU: WH12</li>
-                    <li>Be the first to review this product</li>
-                    <li>As low as: <strong>$68.99</strong></li>
-
-                    <li>Color:
-                        <ul>
-                            <li>black</li>
-                            <li>blue</li>
-                        </ul>
-                    </li>
-
-                    <form> 
-                        <label for="qty">Qty:</label>
-                        <input name="qty" type="number" value="1"> 
-                        <button>Add to Cart</button>
-                    </form>  
-                    <div>
-                        <button>¤</button>
-                        <button>Add to wishlist</button>
-                        <button>łł</button>
-                        <button>Bar-chart button</button>
-                    </div> 
-                </ul>
-            </div> 
-            <div>
-                <picture>
-                    <source>
-                    <source>
-                        <img src="" alt="img1">
-                        <img src="" alt="img2">
-                        <img src="" alt="img3">
-                </picture>
-            </div> 
-        </section> 
-
-        <section>
-            <div>
-                <h4>Details:</h4>
-                <div>
-                    <p>Note: Stamp colour...</p>
-                    <p>This is not a Frisbee...</p>
-                    <p>USA Ultimate approved...</p>
-                </div> 
-            </div>
-            <div>
-                <h4>More information</h4>
-                <div>
-                    <table> 
-                        <tr>
-                            <td>Style:</td>
-                            <td>Insulated</td>
-                        </tr>
-                        <tr>
-                            <td>Material:</td>
-                            <td>Fieece, Polyester, Wool</td>
-                        </tr>
-                        <tr>
-                            <td>Pattern:</td>
-                            <td>Solid</td>
-                        </tr>
-                        <tr>
-                            <td>Climate:</td>
-                            <td>ALl-weather, Cool, Indoor, SPring</td>
-                        </tr>
-                    </table>
-                </div>
-            </div> 
-        </section>
-    </main>  
-    <footer>
-        <section>
-            <h2>Newsletter</h2>
-            <p>Sign up for our newsletter and be the first to find out about new products, discounts and more.</p>
-
-            <form action="">
-                <fieldset>
-                    <legend>Grabsee Newsletter Form</legend> 
-                    <label for="newsletter">Enter your email in order to become the Grabsee subscriber</label>
-
-                    <input placeholder="Enter your email address" name="newsletter" type="email">
-                    <button>Subscibe</button>
-                </fieldset>
-            </form>
-        </section>
-
-        <section>
-            <details open>
-                <summary><h3>Categories</h3></summary>
-
-                <ul>
-                    <li>
-                        <a href="">Frisbee</a>
-                    </li>
-                    <li>
-                        <a href="">Gear</a>
-                    </li>
-                    <li>
-                        <a href="">Accessories</a>
-                    </li>
-                    <li>
-                        <a href="">Gifts</a>
-                    </li>
-                </ul>
-            </details>
-
-            <details>
-                <summary><h3>Contact us</h3></summary>
-
-                <ul>
-                    <li><address>Trg Slobode 6</address></li>
-                    <li><a href="tel:+385958811630">+385 95 8811630</a></li>
-                    <li><a href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
-                </ul>
-            </details>
-
-        </section>
-
-        <div>
-            <small>Copyright &reg; 2021 Grabsbee</small>
-        </div>
-    </footer>
 </body>
 </html>

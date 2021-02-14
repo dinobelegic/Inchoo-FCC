@@ -7,38 +7,95 @@ $bp-large: 1024px;
 :root {
   --blue-color: #12167a;
   --red-color: #ec1d2e;
-  --neutral-color: #44ee4e;
+  --neutral-color: #4E4E4E;
+  --white-color: #FFF;
 
   /* Primary colors */
 
   --primary__color: var(--blue-color);
-  --primary-10: #b9121d;
-  --primary-20: #d41727;
-  --primary-30: #740d15;
 
   /* Secondary colors */
 
   --secondary__color: var(--red-color);
+  --secondary-10: #b9121d;
+  --secondary-20: #d41727;
+  --secondary-30: #740d15;
+  --secondary-90: #D00505;
 
   /* Neutral colors */
   --text__color: var(--neutral-color);
+  --neutral-90: #696969;
+  --neutral-60: #828282;
+  --neutral-25: #9C9C9C;
+  --neutral-10: #CFCFCF;
+  --neutral-5: #E8E8E8;
+
+  --success__color: #32D08D;
+  --error__color: #F14F39;
+  --warning__color: #F1B239;
+
+  --text__color__invert: var(--white-color);
+  --text__color__muted: var(--neutral-25);
 
   /* Components */
 
   /* Links */
 
-  --link__color: var(--primary__color);
-  --link__visited__color: var(--primary-10);
-  --link__hover__color: var(--primary-20);
-  --link__active__color: var(--primary-30);
+  --link__color: var(--secondary__color);
+  --link__visited__color: var(--secondary-10);
+  --link__hover__color: var(--secondary-20);
+  --link__active__color: var(--secondary-30);
 
   /* Buttons */
 
   --button-primary__background: var(--primary__color);
+  --button-primary__border: var(--white-color);
   --button-primary__background--hover: var(--secondary__color);
+
+  --button-secondary__background: var(--white-color);
+  --button-secondary__background__border: var(--secondary__color);
+  --button-secondary__color: var(--secondary__color);
 
   /* Headings */
 
   --headings__type: "Anton", sans-serif;
   --body__type: "Open Sans", sans-serif;
+
+  /* Input Field Colors */
+  --input-background-color-default: var(--white-color);
+  --input-background-color-disabled: var(--neutral-5);
+
+  /* Input Field Border Colors */
+
+  --input-border-color-default: var(--neutral-25);
+  --input-border-color-focus: var(--neutral-25);
+  --input-border-color-error: var(--secondary__color);
+
+  /* Form Text Colors */
+
+  --form-label-color: #1A1A1A;
+  --form-placeholder-color: var(--neutral-60);
+  --form-help-txt-color: var(--neutral-90);
+
+  /* Search Field Colors */
+
+  --search-placeholder-color: var(--white-color);
+  --search-border-color-default: var(--secondary__color);
+
+  /* Icons Colors */
+
+  --icon-regular-color: var(--neutral-color);
+  --icon-dark-bg-color: var(--white-color);
+  --icon-indicator-color: var(--neutral-color);
+  --icon-indicator-dark-bg-color: #666666;
+  --icon-link: var(--secondary__color);
+
+  /* Star rating color */
+
+  --star-rating-color-full: var(--secondary__color);
+  --star-rating-color-half: linear-gradient(90deg, #EC1D2E 50%, #CFCFCF 50%, #CFCFCF 104.54%);
+  --star-rating-color-default: var(--neutral-10);
 }
+
+  
+
