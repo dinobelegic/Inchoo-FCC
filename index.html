@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Grabsee - Best place to get profi frisbee gear</title>
 
     <link href="./style.css" rel="stylesheet" type="text/css"/>
@@ -22,7 +23,9 @@
     <header class="header">
         <div class="container header__content">
             <h1 class="logo">
-                <img src="./assets/grabsbee.svg" alt="Grabsee Webshop logo" class="logo__img">
+                <a href="./index.html">
+                    <img src="./assets/grabsbee.svg" alt="Grabsee Webshop logo" class="logo__img">
+                </a> 
             </h1>
 
             <ul class="header__drawers-list">
@@ -45,7 +48,7 @@
                         <button>Close</button>
                     </div>
                 </li>
-                <li>
+                <li class="header__drawers-list__item">
                     <button class="button--no-styles header__buttons">
                         <span class="icon-shopping-cart"></span> <span class="visually-hidden">Cart</span></button>
 
@@ -133,7 +136,7 @@
                         </div>
                     </section>
                 </li>
-                <li>
+                <li class="header__drawers-list__item">
                     <button class="button--no-styles header__buttons">
                         <span class="icon-menu"></span> <span class="visually-hidden">Navigation Trigger</span></button>
 
@@ -147,8 +150,8 @@
 
                                     <ul>
                                         <li><a href="./layout-category-listing.html">Innova Pulsar</a></li>
-                                        <li><a href="">Xcom</a></li>
-                                        <li><a href="">Aviator - Marvel Captian America</a></li>
+                                        <li><a href="./layout-category-listing.html">Xcom</a></li>
+                                        <li><a href="./layout-category-listing.html">Aviator - Marvel Captian America</a></li>
                                     </ul>
                                 </div>
 
@@ -189,8 +192,8 @@
                                     <h3>Recreational</h3>
 
                                     <ul>
-                                        <li><a href="">Nite</a></li>
-                                        <li><a href="">Yikin</a></li>
+                                        <li><a href="./layout-category-listing.html">Nite</a></li>
+                                        <li><a href="./layout-category-listing.html">Yikin</a></li>
                                     </ul>
                                 </div>
 
@@ -264,10 +267,10 @@
                     </picture>
                 </li>
             </ul> 
-             <form action="">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio"> 
+             <form action="" class="home-slider-pagination">
+                <input type="radio" name="pagination">
+                <input type="radio" name="pagination">
+                <input type="radio" name="pagination"> 
              </form>
              
         </section>
@@ -284,7 +287,7 @@
                         <source srcset="./assets/home/featured-frisbees-mob.jpg" />
                         <img src="./assets/home/featured-frisbees-mob.jpg" alt="">
                     </picture>
-                    <a href="" class="home-featured-item__button">Frisbees</a>
+                    <a href="./layout-category-listing.html" class="home-featured-item__button">Frisbees</a>
                 </li>
                 
                 <li class="home-featured-list-item"> 
@@ -295,7 +298,7 @@
                         <source srcset="./assets/home/featured-gear-mob.jpg" />
                         <img src="./assets/home/featured-gear-mob.jpg" alt="">
                     </picture>
-                    <a href="" class="home-featured-item__button">Gear</a>
+                    <a href="./layout-category-listing.html" class="home-featured-item__button">Gear</a>
                 </li>
                 <li class="home-featured-list-item"> 
                     <picture class="home-featured-list-item__img">
@@ -305,7 +308,7 @@
                         <source srcset="./assets/home/featured-accessories-mob.jpg" />
                         <img src="./assets/home/featured-accessories-mob.jpg" alt="">
                     </picture>
-                    <a href="" class="home-featured-item__button">Accessories</a>
+                    <a href="./layout-category-listing.html" class="home-featured-item__button">Accessories</a>
                 </li>
                 <li class="home-featured-list-item"> 
                     <picture class="home-featured-list-item__img">
@@ -315,7 +318,7 @@
                         <source srcset="./assets/home/featured-gifts-mob.jpg" />
                         <img src="./assets/home/featured-gifts-mob.jpg" alt="">
                     </picture>
-                    <a href="" class="home-featured-item__button">Gifts</a>
+                    <a href="./layout-category-listing.html" class="home-featured-item__button">Gifts</a>
                 </li>
             </ul>
         </section>
@@ -343,16 +346,16 @@
 
                 <ul>
                     <li>
-                        <a href="">Frisbee</a>
+                        <a href="./layout-category-listing.html">Frisbee</a>
                     </li>
                     <li>
-                        <a href="">Gear</a>
+                        <a href="./layout-category-listing.html">Gear</a>
                     </li>
                     <li>
-                        <a href="">Accessories</a>
+                        <a href="./layout-category-listing.html">Accessories</a>
                     </li>
                     <li>
-                        <a href="">Gifts</a>
+                        <a href="./layout-category-listing.html">Gifts</a>
                     </li>
                 </ul>
             </details>

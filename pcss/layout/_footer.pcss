@@ -13,8 +13,7 @@
     background: var(--secondary__color);
 }
 
-.footer-top form {
-
+.footer-top form { 
     @media (--large) {
         display: flex;
         justify-content: center;  
@@ -73,16 +72,49 @@
 
 .footer-mid {
     background: var(--primary__color);
+    padding: pxtorem(12px); 
+
+    @media (--large) { 
+
+        display: flex;
+        justify-content: space-evenly; 
+    }  
 }
+
+.footer-mid > details {
+    min-height: pxtorem(42px);
+    padding-bottom: pxtorem(12px);
+}
+
+.footer-mid > details > summary::-webkit-details-marker {
+
+    float: right; 
+    @media (--large) {
+        display: none;
+    }
+}
+
+.footer-mid a { 
+    color: white;
+    text-decoration: none;
+    } 
 
 .footer-mid__heading {
     font: 12px var(--body__type);
     @mixin section-title;  
     letter-spacing: 0.05em;
+    margin-bottom: 0px;
+    padding-bottom: pxtorem(12px);
 }
 
 .footer-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: pxtorem(42px);
+
+    @media (--large) {
+        height: pxtorem(48px);
+    }
 }
+

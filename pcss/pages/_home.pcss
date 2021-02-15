@@ -64,7 +64,7 @@
   .home-slider-item__title {
       @mixin section-title;
       font-weight: normal;
-      font-size: 24px;
+      font-size: pxtorem(24px);
       color: var(--text__color__invert);
   }
   
@@ -106,7 +106,7 @@
 
 
 .home-featured-list-item {
-  margin: 11px 12px;
+  margin: pxtorem(11px) pxtorem(12px);
   position: relative; 
 
   &::after { 
@@ -147,4 +147,15 @@
   font-size: 1.5em;
   text-transform: capitalize;
   z-index: 1;
+}
+
+.home-slider-pagination {
+  width: 5em;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.home-slider-pagination input {
+  background: green;
 }
