@@ -220,7 +220,119 @@
             </ul>
         </div>
     </header>
-    <main></main>
+
+    <main class="container">
+
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="./index.html" title="Grabsee Home">Home</a></li>
+            <li class="breadcrumbs__item"><a href="./layout-category-listing.html" title="Grabsee Main Category">Freesbe</a></li>
+            <li tabindex="0" class="breadcrumbs__item">Ultimate Frisbee</li>
+        </ul>
+        
+        <div class="product-detail">
+            <picture class="product-detail__img">
+                <source srcset="./assets/product-single/frisbee-black-desktop.jpg" 
+                    media="(min-width: 1024px)"/>
+                <source srcset="./assets/product-single/frisbee-black-mob.jpg">
+                <img src="./assets/product-single/frisbee-black-mob.jpg" alt="Product image">
+            </picture> 
+
+            <ul class="product-detail__thumbnails">
+                <li>
+                    <img src="./assets/product-single/frisbee-black-mob-thumb.jpg" alt="Product image thumbnail">
+                </li>
+                <li>
+                    <img src="./assets/product-single/frisbee-orange-mob-thumb.jpg" alt="Product image thumbnail">
+                </li> 
+            </ul>
+        </div>
+
+        <div class="product-title">
+            <h1>Inova Product Name</h1>
+            <div class="product-short-info">
+                <p>In stock</p>
+                <p><strong>SKU</strong> WH12</p>
+                <small>Be the first to review this product</small>
+
+                <div class="product-price">
+                    <span>As low as</span>
+                    <span>$21.99</span>
+                </div>
+
+                <div class="product-attributes">
+                    <form action="">
+                        <dl>
+                            <dt>Color</dt>
+                            <dd>Black</dd>
+                            <dd>Blue</dd>
+                            <dd>Cian</dd>
+                        </dl>
+    
+                        <fieldset>
+                            <legend>Item qty</legend>
+                            <label for="qty">Qty:</label>
+                            <input name="qty" type="number">
+                        </fieldset>
+                    </form>
+                </div> 
+            </div>
+            
+            <button class="button button--primary" type="submit">Add to Cart</button>
+
+            <ul>
+                <li>
+                    <a href="" title="Add to wishlist">
+                        <span class="icon-heart"></span> Add to Wishlist</a>
+                </li>
+                <li>
+                    <a href="" title="Add to Compare">
+                        <span class="icon-bar-chart"></span> Add to Compare</a>
+                </li>
+            </ul>
+            
+        </div>
+
+        <section>
+            <details>
+                <summary>
+                    <h2 aria-labeledby="" aria-controls="details" aria-selected="" aria-expanded="true" tabindex="0">Details</h2>
+                </summary>
+                <div aria-labelledby="" tabindex="0">
+                    <p>Note: Stamp colour on disc may vary from pictured image.</p>
+                    <p>This is not a Frisbee its a quality Flying Disc, if you dont know the difference think of the Frisbee as a toy and a Flying Disc as a quality piece of sports equipment.</p>
+                    <p>USA Ultimate approved for tournament play, the Pulsar is the official disc of Major League Ultimate. This disc is not just a competition disc. It is also perfect for freestyling at the beach or for a game of throw and catch in the backyard or park. The Pulsar is also approved for Super Class and PDGA disc golf use.</p>
+                </div>
+            </details>
+            
+            <details>
+                <summary>
+                    <h2 aria-labeledby="" aria-controls="description" aria-selected="" aria-expanded="true" tabindex="0">More information</h2>
+                </summary>
+                
+                <div aria-labelledby="" tabindex="0">
+                    <table>
+                        <tr>
+                            <th>Style:</th>
+                            <th>Insulated, Heavy Duty, Soft Shell, ¼ zip</th>
+                        </tr>
+                        <tr>
+                            <th>Material:</th>
+                            <th>Fleece, Polyester, Wool</th>
+                        </tr>
+                        <tr>
+                            <th>Pattern:</th>
+                            <th>Solid</th>
+                        </tr>
+                        <tr>
+                            <th>Climate:</th>
+                            <th>All-Weather, Cool, Indoor, Spring</th>
+                        </tr>
+                    </table>
+                </div>
+            </details>
+        </section>
+    </main> 
+
     <footer class="footer">
         <section class="footer-top">
             <h2 class="footer-top__heading">Newsletter</h2>
@@ -257,7 +369,7 @@
                 </ul>
             </details>
 
-            <details>
+            <details open>
                 <summary><h2 class="footer-mid__heading">Contact us</h2></summary>
 
                 <ul>

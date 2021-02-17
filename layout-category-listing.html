@@ -37,8 +37,8 @@
                                 <legend tabindex="0">Grabsee search form</legend>
                                 <label tabindex="0" for="search">Enter here your search term</label>
                                 <input name="search" type="search" 
-                                        placeholder="Enter here your search term"
-                                        aria-label="Search through site content">
+                                    placeholder="Enter here your search term"
+                                    aria-label="Search through site content">
                                 <button>Search it</button>
                             </fieldset>
                         </form>
@@ -221,87 +221,495 @@
     </header>
 
     <main> 
-        <ul class="breadcrumbs">
-            <li class="breadcrumbs__item"><a href="#" title="Grabsee Home">Home</a></li>
-            <li class="breadcrumbs__item"><a href="#" title="Grabsee Main Category">Freesbe</a></li>
-            <li tabindex="0" class="breadcrumbs__item">Ultimate Frisbee</li>
-        </ul> 
-
-        <h1>Ultimate Frisbee</h1>
-
-        <section>
-            <button>Shop by <span class=""></span></button>
-
-            <div>
-                <ul>
-                    <li><button title="Grid View"><span class="icon-grid"></span></button></li>
-                    <li><button title="List View"><span class="icon-list"></span></button></li>
-                </ul>
-
-                <div>
-                    <label for="sort-by">Sort products by:</label>
-                    <select type="select" name="sort-by" id="sort-by">
-                        <option value="best-selers">Best selers</option>
-                        <option value="price">Price</option>
-                    </select>
-                    <button class="" title="Set direction"><span class="icon-arrow-down"></span></button>
-                </ul>
-            </div>
-
-            <ul id="grid-and-list" class="">
-                <li>
-                    <picture>
-                        <img src="" alt="Product image">
-                    </picture>
-
-                    <h2><a href="/layout-product-page.html">Innova Pulsar</a></h2>
-                    <div class="rating rating__summary">
-                        <div class=""></div>
-                        <p class="">(#)</p>
-                    </div>
-
-                    <p class="price">As low as <strong>$21.99</strong></p>
-
-                    <form action="">
-                        <input type="hidden" name="product" value="">
-                        <button type="submit" class="">Add to Cart</button>
-                    </form>
-
-                    <ul>
-                        <li>
-                            <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
-                        </li>
-                        <li>
-                            <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
-                        </li>
+        <div class="grid">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="./index.html" title="Grabsee Home">Home</a></li>
+                <li class="breadcrumbs__item"><a href="./layout-category-listing.html" title="Grabsee Main Category">Freesbe</a></li>
+                <li tabindex="0" class="breadcrumbs__item">Ultimate Frisbee</li>
+            </ul> 
+    
+            <h1 class="page-title">Ultimate Frisbee</h1>
+    
+            <div class="shopping-options">
+                <button class="shopping-options__button">Shop by <span class="icon-plus-circle"></span></button>
+            </div> 
+    
+            <section> 
+                <div class="toolbar">
+                    <ul class="toolbar-view">
+                        <li><button title="Grid View"><span class="icon-grid"></span></button></li>
+                        <li><button title="List View"><span class="icon-list"></span></button></li>
                     </ul>
-                </li>
-            </ul>
-
-            <div>
-                <ul class="pagination pagination__list">
-                    <li class="pagination__item"><span class="pagination__link pagination__link--current">1</span></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
-                </ul>
-
-                <div class="limiter">
-                    <label for="limiter">Show</label>
-                    <select name="limiter" id="limiter">
-                        <option value="8">8</option>
-                        <option value="16">16</option>
-                        <option value="99">99</option>
-                    </select>
+    
+                    <div class="toolbar-sort">
+                        <label class="visually-hidden" for="sort-by">Sort products by:</label>
+                        <select type="select" name="sort-by" id="sort-by">
+                            <option value="bestseller">Bestseller</option>
+                            <option value="price">Price</option>
+                        </select>
+                        <button title="Set direction"><span class="icon-arrow-down"></span></button>
+                    </div>
                 </div>
+    
+                <ul class="product-grid">   
+                    <li class="product-grid__item">
+                        <picture class="product-grid__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-grid__item-details">
+                            <h2 class="product-grid__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars"></span>
+                            <p class="product-grid__item-price">As low as <strong class="product-grid__item-price">$21.99</strong></p>
+                        </div>
+                        <div class="product-grid__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+                            
+                            <ul class="">
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul> 
+                        </div> 
+                    </li>
+                    <li class="product-grid__item">
+                        <picture class="product-grid__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-grid__item-details">
+                            <h2 class="product-grid__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars"></span>
+                            <p class="product-grid__item-price">As low as <strong class="product-grid__item-price">$21.99</strong></p>
+                        </div>
+                        <div class="product-grid__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+                            
+                            <ul class="">
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul> 
+                        </div> 
+                    </li>
+                    <li class="product-grid__item">
+                        <picture class="product-grid__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-grid__item-details">
+                            <h2 class="product-grid__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars"></span>
+                            <p class="product-grid__item-price">As low as <strong class="product-grid__item-price">$21.99</strong></p>
+                        </div>
+                        <div class="product-grid__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+                            
+                            <ul class="">
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul> 
+                        </div> 
+                    </li>
+                    <li class="product-grid__item">
+                        <picture class="product-grid__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-grid__item-details">
+                            <h2 class="product-grid__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars"></span>
+                            <p class="product-grid__item-price">As low as <strong class="product-grid__item-price">$21.99</strong></p>
+                        </div>
+                        <div class="product-grid__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+                            
+                            <ul class="">
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul> 
+                        </div> 
+                    </li> 
+                </ul> 
+                <div class="toolbar-bottom">
+                    <ul class="pagination pagination__list">
+                        <li class="pagination__item"><span class="pagination__link pagination__link--current">1</span></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
+                    </ul>
+    
+                    <div class="display">
+                        <label for="display">Show</label>
+                        <select name="display" id="display">
+                            <option value="8">8</option>
+                            <option value="16">16</option>
+                            <option value="99">99</option>
+                        </select>
+                    </div> 
+                </div>
+                
+            </section>
+        </div>
 
-            </div>
-            
-        </section>
+        <br><br><br><br>
+
+        <div class="list">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="./index.html" title="Grabsee Home">Home</a></li>
+                <li class="breadcrumbs__item"><a href="./layout-category-listing.html" title="Grabsee Main Category">Freesbe</a></li>
+                <li tabindex="0" class="breadcrumbs__item">Ultimate Frisbee</li>
+            </ul> 
+    
+            <h1 class="page-title">Ultimate Frisbee</h1>
+    
+            <div class="shopping-options">
+                <button class="shopping-options__button">Shop by <span class="icon-plus-circle"></span></button>
+            </div> 
+    
+            <section> 
+                <div class="toolbar">
+                    <ul class="toolbar-view">
+                        <li><button title="Grid View"><span class="icon-grid"></span></button></li>
+                        <li><button title="List View"><span class="icon-list"></span></button></li>
+                    </ul>
+    
+                    <div class="toolbar-sort">
+                        <label class="visually-hidden" for="sort-by">Sort products by:</label>
+                        <select type="select" name="sort-by" id="sort-by">
+                            <option value="bestseller">Bestseller</option>
+                            <option value="price">Price</option>
+                        </select>
+                        <button title="Set direction"><span class="icon-arrow-down"></span></button>
+                    </div>
+                </div>
+    
+                <ul class="product-list">  
+                    <li class="product-list__item">
+                        <picture class="product-list__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-list__item-details">
+                            <h2 class="product-list__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars">####</span>
+                            <p class="product-list__item-price">As low as <strong class="product-list__item-price">$21.99</strong></p>
+                        </div>
+                        
+                        <div class="product-list__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+        
+                            <ul>
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </li> 
+                    <li class="product-list__item">
+                        <picture class="product-list__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-list__item-details">
+                            <h2 class="product-list__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars">####</span>
+                            <p class="product-list__item-price">As low as <strong class="product-list__item-price">$21.99</strong></p>
+                        </div>
+                        
+                        <div class="product-list__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+        
+                            <ul>
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="product-list__item">
+                        <picture class="product-list__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-list__item-details">
+                            <h2 class="product-list__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars">####</span>
+                            <p class="product-list__item-price">As low as <strong class="product-list__item-price">$21.99</strong></p>
+                        </div>
+                        
+                        <div class="product-list__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+        
+                            <ul>
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="product-list__item">
+                        <picture class="product-list__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-list__item-details">
+                            <h2 class="product-list__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars">####</span>
+                            <p class="product-list__item-price">As low as <strong class="product-list__item-price">$21.99</strong></p>
+                        </div>
+                        
+                        <div class="product-list__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+        
+                            <ul>
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="product-list__item">
+                        <picture class="product-list__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-list__item-details">
+                            <h2 class="product-list__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars">####</span>
+                            <p class="product-list__item-price">As low as <strong class="product-list__item-price">$21.99</strong></p>
+                        </div>
+                        
+                        <div class="product-list__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+        
+                            <ul>
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="product-list__item">
+                        <picture class="product-list__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-list__item-details">
+                            <h2 class="product-list__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars">####</span>
+                            <p class="product-list__item-price">As low as <strong class="product-list__item-price">$21.99</strong></p>
+                        </div>
+                        
+                        <div class="product-list__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+        
+                            <ul>
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="product-list__item">
+                        <picture class="product-list__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-list__item-details">
+                            <h2 class="product-list__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars">####</span>
+                            <p class="product-list__item-price">As low as <strong class="product-list__item-price">$21.99</strong></p>
+                        </div>
+                        
+                        <div class="product-list__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+        
+                            <ul>
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="product-list__item">
+                        <picture class="product-list__item-img">
+                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                media="(min-width: 1024px)" 
+                            />
+                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                        </picture>
+    
+                        <div class="product-list__item-details">
+                            <h2 class="product-list__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
+                            <span class="rating-stars">####</span>
+                            <p class="product-list__item-price">As low as <strong class="product-list__item-price">$21.99</strong></p>
+                        </div>
+                        
+                        <div class="product-list__item-actions">
+                            <form action="">
+                                <input type="hidden" name="product" value="">
+                                <button type="submit" class="button button--primary">Add to Cart</button>
+                            </form>
+        
+                            <ul>
+                                <li>
+                                    <a href="" title="Add to wishlist"><span class="icon-heart"></span></a>
+                                </li>
+                                <li>
+                                    <a href="" title="Add to Compare"><span class="icon-bar-chart"></span></a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </li> 
+                </ul> 
+                <div class="toolbar-bottom">
+                    <ul class="pagination pagination__list">
+                        <li class="pagination__item"><span class="pagination__link pagination__link--current">1</span></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
+                    </ul>
+    
+                    <div class="display">
+                        <label for="display">Show</label>
+                        <select name="display" id="display">
+                            <option value="8">8</option>
+                            <option value="16">16</option>
+                            <option value="99">99</option>
+                        </select>
+                    </div> 
+                </div>
+                
+            </section>
+        </div>  
     </main>
 
-    <aside>
+    
+
+    <aside class="sidebar__shopping-options">
         <h2>Shopping options</h2>
         <button><span class="icon-x-circle"></span> Close</button>
+
+        <div class="display">
+            <label for="display">Show</label>
+            <select name="display" id="display">
+                <option value="8">8</option>
+                <option value="16">16</option>
+                <option value="99">99</option>
+            </select>
+        </div>
 
         <ul>
             <li>
@@ -389,7 +797,7 @@
                 </ul>
             </details>
 
-            <details>
+            <details open>
                 <summary><h2 class="footer-mid__heading">Contact us</h2></summary>
 
                 <ul>
