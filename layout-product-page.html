@@ -247,31 +247,31 @@
             </ul>
         </div>
 
-        <div class="product-title">
-            <h1>Inova Product Name</h1>
+        <div class="product-description">
+            <h1 class="product-title">Inova Product Name</h1>
             <div class="product-short-info">
-                <p>In stock</p>
-                <p><strong>SKU</strong> WH12</p>
-                <small>Be the first to review this product</small>
+                <p class="product-short-info__in-stock">In stock</p>
+                <p class="product-short-info__sku"><strong>SKU:</strong> WH12</p>
+                <small class="product-short-info__review">Be the first to review this product</small>
 
                 <div class="product-price">
                     <span>As low as</span>
-                    <span>$21.99</span>
+                    <span><strong>$21.99</strong></span>
                 </div>
 
                 <div class="product-attributes">
                     <form action="">
                         <dl>
                             <dt>Color</dt>
-                            <dd>Black</dd>
-                            <dd>Blue</dd>
-                            <dd>Cian</dd>
+                            <dd class="black-color"> </dd>
+                            <dd class="blue-color"> </dd>
+                            <dd class="pink-color"> </dd>
                         </dl>
     
-                        <fieldset>
-                            <legend>Item qty</legend>
+                        <fieldset class="product-qty">
+                            <legend class="visually-hidden">Item qty</legend>
                             <label for="qty">Qty:</label>
-                            <input name="qty" type="number">
+                            <input name="qty" type="number" placeholder="1">
                         </fieldset>
                     </form>
                 </div> 
@@ -279,23 +279,25 @@
             
             <button class="button button--primary" type="submit">Add to Cart</button>
 
-            <ul>
+            <ul class="product-actions">
                 <li>
                     <a href="" title="Add to wishlist">
-                        <span class="icon-heart"></span> Add to Wishlist</a>
+                        <span class="icon-heart"></span> Add to Wishlist
+                    </a>
                 </li>
                 <li>
                     <a href="" title="Add to Compare">
-                        <span class="icon-bar-chart"></span> Add to Compare</a>
+                        <span class="icon-bar-chart"></span> Add to Compare
+                    </a>
                 </li>
-            </ul>
+            </ul> 
             
         </div>
 
-        <section>
-            <details>
+        <section class="product-long-info">
+            <details open>
                 <summary>
-                    <h2 aria-labeledby="" aria-controls="details" aria-selected="" aria-expanded="true" tabindex="0">Details</h2>
+                    <h2 class="product-long-info__title" aria-labeledby="" aria-controls="details" aria-selected="" aria-expanded="true" tabindex="0">Details</h2>
                 </summary>
                 <div aria-labelledby="" tabindex="0">
                     <p>Note: Stamp colour on disc may vary from pictured image.</p>
@@ -304,28 +306,28 @@
                 </div>
             </details>
             
-            <details>
+            <details open>
                 <summary>
-                    <h2 aria-labeledby="" aria-controls="description" aria-selected="" aria-expanded="true" tabindex="0">More information</h2>
+                    <h2 class="product-long-info__title" aria-labeledby="" aria-controls="description" aria-selected="" aria-expanded="true" tabindex="0">More information</h2>
                 </summary>
                 
                 <div aria-labelledby="" tabindex="0">
-                    <table>
+                    <table class="product-long-info__table">
                         <tr>
-                            <th>Style:</th>
-                            <th>Insulated, Heavy Duty, Soft Shell, ¼ zip</th>
+                            <th class="left-column">Style:</th>
+                            <th class="right-column">Insulated, Heavy Duty, Soft Shell, ¼ zip</th>
                         </tr>
                         <tr>
-                            <th>Material:</th>
-                            <th>Fleece, Polyester, Wool</th>
+                            <th class="left-column">Material:</th>
+                            <th class="right-column">Fleece, Polyester, Wool</th>
                         </tr>
                         <tr>
-                            <th>Pattern:</th>
-                            <th>Solid</th>
+                            <th class="left-column">Pattern:</th>
+                            <th class="right-column">Solid</th>
                         </tr>
                         <tr>
-                            <th>Climate:</th>
-                            <th>All-Weather, Cool, Indoor, Spring</th>
+                            <th class="left-column">Climate:</th>
+                            <th class="right-column">All-Weather, Cool, Indoor, Spring</th>
                         </tr>
                     </table>
                 </div>

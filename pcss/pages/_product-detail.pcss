@@ -1,0 +1,174 @@
+.product-detail {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: pxtorem(20px);
+}
+
+.product-detail__thumbnails {
+    display: flex;
+
+}
+
+.product-detail__thumbnails li {
+    margin: 0 pxtorem(6px);
+}
+.product-detail__thumbnails :first-child {
+    margin-left: 0;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {  
+    font-weight: normal; 
+    line-height: pxtorem(42px);  
+    text-transform: capitalize; 
+    color: var(--text__color);
+    margin-bottom: pxtorem(23px);
+}
+
+.product-short-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: pxtorem(20px);
+}
+
+.product-short-info p { 
+    color: #12167A;
+}
+
+.product-short-info__in-stock {
+    margin-bottom: pxtorem(3px);
+}
+
+.product-short-info__sku {
+    margin-bottom: pxtorem(15px);
+}
+
+.product-short-info__review { 
+    font-size: pxtorem(12px);
+    line-height: pxtorem(21px); 
+    color: var(--secondary__color);
+    margin-bottom: pxtorem(9px);
+}
+.product-price {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text__color);
+    margin-bottom: pxtorem(20px);
+}
+
+.product-attributes dt { 
+    font-size: 12px;
+    line-height: 21px; 
+    color: var(--primary__color);
+}
+
+.product-attributes dl {
+    margin-bottom: pxtorem(23px);
+}
+.product-attributes dd {
+    display: inline;
+    position: relative;
+    
+}
+
+.black-color::after {
+    content: "";
+    position: absolute;  
+    width: pxtorem(28px);
+    height: pxtorem(18px);
+    background: #000;
+    border: 1px solid var(--neutral-10); 
+}
+
+.blue-color::after {
+    content: "";
+    position: absolute;  
+    width: pxtorem(28px);
+    height: pxtorem(18px);
+    background: #1857F7;
+    border: 1px solid var(--neutral-10); 
+    margin-left: pxtorem(34px);
+}
+
+.pink-color::after {
+    content: "";
+    position: absolute;  
+    width: pxtorem(28px);
+    height: pxtorem(18px);
+    background: #EF3DFF;
+    border: 1px solid var(--neutral-10);
+    margin-left: pxtorem(68px);
+}
+
+.product-qty {
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.product-qty input {
+    margin-left: pxtorem(6px);
+    width: pxtorem(63px);
+    height: pxtorem(42px);
+    border: 1px solid var(--neutral-25);
+}
+
+.product-actions {
+    margin-top: pxtorem(23px);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.product-actions li {
+    font-size: pxtorem(10px);
+    line-height: pxtorem(18px);
+    color: #12167A;
+    margin-right: pxtorem(40px);
+    margin-bottom: pxtorem(24px);
+}
+
+.product-actions li:first-child {
+    margin-left: pxtorem(3px);
+}
+
+.product-actions a {
+    text-decoration: none;
+}
+
+.product-actions span {
+    margin: 0;
+}
+
+.product-long-info > details {
+    min-height: pxtorem(42px); 
+}
+
+.product-long-info > details > summary::-webkit-details-marker {
+
+    float: right; 
+    @media (--large) {
+        display: none;
+    }
+}
+
+.product-long-info__title { 
+    font-family: Open Sans; 
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px; 
+    text-transform: uppercase; 
+    color: var(--secondary__color);
+    } 
+
+.product-long-info__heading {
+    font: 12px var(--body__type);
+    @mixin section-title;  
+    letter-spacing: 0.05em;
+    margin-bottom: 0px;
+    padding-bottom: pxtorem(12px);
+}
