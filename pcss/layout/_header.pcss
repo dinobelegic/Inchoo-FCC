@@ -1,6 +1,9 @@
 .header {
     background-color: var(--primary__color);
     min-height: pxtorem(63px); 
+    @media (--large) {
+      margin-bottom: pxtorem(42px);
+    }
 }
 
 .header__content {
@@ -9,7 +12,12 @@
     align-items: center;
     padding-top: pxtorem(21px);
     padding-bottom: pxtorem(21px);
+  
+    @media (--large) {
+      padding: pxtorem(21px) pxtorem(100px) 0 pxtorem(100px);
+    }
   }
+  
 
   .header__buttons {
     color: var(--text__color__invert);
