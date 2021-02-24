@@ -87,11 +87,7 @@
 }
 
 .footer-mid > details > summary::-webkit-details-marker {
-
-    float: right; 
-    @media (--large) {
-        display: none;
-    }
+    display: none; 
 }
 
 .footer-mid a { 
@@ -105,6 +101,20 @@
     letter-spacing: 0.05em;
     margin-bottom: 0px;
     padding-bottom: pxtorem(12px);
+    position: relative;
+}
+
+.footer-mid__heading::after {
+    font-family: "Inchoo-Icons" !important;
+    content: "\e909";
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: pxtorem(14px);
+
+    @media (--large) {
+        display: none;
+    }
 }
 
 .footer-bottom {

@@ -1,0 +1,77 @@
+.sidebar__shopping-options {
+    display: none;
+
+    @media(--large) {
+        display: block;
+
+        & h2 {
+            font-family: Open Sans; 
+            font-size: pxtorem(16px);
+            line-height: pxtorem(24px);
+            text-transform: uppercase;
+            color: var(--primary__color);
+        }
+
+        & button {
+            display: none;
+        }
+    }
+}
+/* DORADITI DA NA HOVERU ISPADNE SIDEBAR NA MOBILEU 
+.shopping-options:hover .sidebar__shopping-options {
+    display: block;
+}
+  */
+.layered-nav-list__item--title {
+
+    @media (--large) {
+        height: pxtorem(48px);
+        font-family: Anton; 
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--text__color);
+        padding-top: pxtorem(15px);
+        position: relative; 
+        border-bottom: 1px solid var(--neutral-10);
+
+        &::after {
+            font-family: "Inchoo-Icons";
+            content: "\e909";
+            position: absolute;
+            top: pxtorem(15px);
+            right: 0;  
+        }
+
+        &:hover {
+            height: 100%;
+            border-bottom: none;
+        }
+
+        &:hover .layered-nav-list__item--inner-list {
+            display: block;
+        }
+    }
+}
+
+.layered-nav-list__item--inner-list {
+
+    @media (--large) {
+        display: none; 
+        padding-left: pxtorem(12px);
+        margin-top: pxtorem(9px);
+    }
+}
+
+.inner-list__item {
+
+    @media (--large) {
+        height: 100%;
+        padding-top: pxtorem(12px);
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal; 
+        line-height: pxtorem(24px); 
+        color: var(--text__color);
+    }
+}
