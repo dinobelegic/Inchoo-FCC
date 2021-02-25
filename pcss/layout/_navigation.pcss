@@ -59,10 +59,13 @@
     }
 }
 
-.header__drawers-list__item:hover .menu{ 
+.show-menu{ 
     background: white;
     height: 100vh;
     left: 0;
+}
+
+.menu:hover {
 
     @media (--large) {
         height: auto;
@@ -223,7 +226,7 @@
     top: -15%;
 }
 
-.header__drawers-list__item:hover .search{ 
+.show-search{ 
     top: pxtorem(20px); 
 
     @media (--large) {
@@ -238,7 +241,8 @@
 }
 
 .search-close-button {
-
+    width: 10%;
+    align-self: center;
     @media (--large) {
         order: 2;
         font-size: pxtorem(16px);
@@ -300,7 +304,7 @@
 
 }
 
-.header__drawers-list__item:hover .shopping-cart {
+.show-shopping-cart {
     left: 0; 
     width: 100%;
 
@@ -311,7 +315,7 @@
 
 .shopping-cart__close-button {
     align-self: flex-end;
-    padding-top: pxtorem(24px); 
+    margin-top: pxtorem(24px); 
     color: var(--text__color);
 
     @media (--large) {

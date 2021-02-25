@@ -1,15 +1,23 @@
-.sidebar__shopping-options {
-    display: none;
+.sidebar__shopping-options { 
+    position: absolute;
+    top: 0;
+    left: -100%;
+    padding-left: pxtorem(12px);
+    padding-right: pxtorem(12px);
+    background: white;
+    height: 80vh;
+    width: 100%;
 
     @media(--large) {
-        display: block;
+        position: static; 
+        padding-left: 0;
+        padding-right: 0;
 
         & h2 {
+            margin-top: 0;
+            margin-bottom: pxtorem(23px);
             font-family: Open Sans; 
-            font-size: pxtorem(16px);
-            line-height: pxtorem(24px);
-            text-transform: uppercase;
-            color: var(--primary__color);
+            font-size: pxtorem(16px); 
         }
 
         & button {
@@ -17,20 +25,65 @@
         }
     }
 }
-/* DORADITI DA NA HOVERU ISPADNE SIDEBAR NA MOBILEU 
-.shopping-options:hover .sidebar__shopping-options {
-    display: block;
+/*  DODATI OVU KLASU NA BUTTON KLIK */
+.sidebar-show {
+    left: 0;
 }
-  */
+
+.sidebar__shopping-options h2 {
+    margin-top: pxtorem(51px);
+    margin-bottom: pxtorem(25px);
+    font-family: "Open Sans"; 
+    font-size: pxtorem(14px);
+    line-height: pxtorem(24px);
+    text-transform: uppercase;
+    color: var(--primary__color);
+}
+
+.sidebar__shopping-options > button {
+    position: absolute;
+    top: 24px;
+    right: 12px;
+}
+
 .layered-nav-list__item--title {
+    height: pxtorem(42px);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: pxtorem(12px);
+    line-height: pxtorem(24px);
+    padding-top: pxtorem(12px); 
+    letter-spacing: 0.05em;
+    text-transform: uppercase; 
+    border-bottom: 1px solid var(--neutral-10); 
+    color: var(--text__color);
+    position: relative;
+
+    &::after {
+        font-family: "Inchoo-Icons";
+        content: "\e909";
+        position: absolute;
+        top: pxtorem(12px);
+        right: 0;  
+    }
+
+    &:hover {
+        height: 100%;
+        border-bottom: none;
+    }
+
+    &:hover .layered-nav-list__item--inner-list {
+        display: block;
+        padding-left: pxtorem(12px);
+        margin-top: pxtorem(9px);
+    }
 
     @media (--large) {
         height: pxtorem(48px);
         font-family: Anton; 
-        line-height: 18px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: var(--text__color);
+        font-weight: normal;
+        line-height: pxtorem(18px);  
         padding-top: pxtorem(15px);
         position: relative; 
         border-bottom: 1px solid var(--neutral-10);
@@ -50,12 +103,13 @@
 
         &:hover .layered-nav-list__item--inner-list {
             display: block;
+            
         }
     }
 }
 
 .layered-nav-list__item--inner-list {
-
+    display: none;
     @media (--large) {
         display: none; 
         padding-left: pxtorem(12px);
@@ -64,6 +118,15 @@
 }
 
 .inner-list__item {
+    height: 100%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4E4E4E;
 
     @media (--large) {
         height: 100%;

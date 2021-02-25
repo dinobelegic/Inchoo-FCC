@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
+    <script src="main.js" async></script>
+    <script src="category-listing.js" async></script>
 </head>
 <body>
     <header class="header">
@@ -28,12 +30,12 @@
 
             <ul class="header__drawers-list">
                 <li class="header__drawers-list__item">
-                    <button class="button--no-styles header__buttons search-button">
+                    <button onclick="showSearch()" class="button--no-styles header__buttons search-button">
                         <span class="icon-search"></span> <span class="visually-hidden">Search</span>
                     </button>
 
-                    <div class="search">
-                        <button class="search-close-button">Close</button>
+                    <div id="search" class="search">
+                        <button onclick="hideSearch()" class="search-close-button">Close</button>
                         <form>
                             <fieldset class="search-field"> 
                                 <label tabindex="0" for="search"></label>
@@ -46,12 +48,12 @@
                     </div>
                 </li>
                 <li class="header__drawers-list__item">
-                    <button class="button--no-styles header__buttons shopping-cart-button">
+                    <button onclick="showShoppingCart()" class="button--no-styles header__buttons shopping-cart-button">
                         <span class="icon-shopping-cart"></span> <span class="visually-hidden">Cart</span>
                     </button>
 
-                    <div class="shopping-cart"> 
-                        <button class="shopping-cart__close-button">Close</button>
+                    <div id="shopping-cart" class="shopping-cart"> 
+                        <button onclick="hideShoppingCart()" class="shopping-cart__close-button">Close</button>
 
                         <p class="shopping-cart__item-count"># item in Cart</p> 
                         <p class="recently-added">Recently added items</p> 
@@ -148,14 +150,14 @@
                     </div>
                 </li>
                 <li class="header__drawers-list__item">
-                    <button class="button--no-styles header__buttons navbar-button">
+                    <button onclick="showNavigation()" class="button--no-styles header__buttons navbar-button">
                         <span class="icon-menu"></span> <span class="visually-hidden">Navigation Trigger</span>
                     </button>
 
-                    <nav class="menu">
+                    <nav id="menu" class="menu">
                         
                         <p class="menu__title">Menu</p>
-                        <button>Close</button>
+                        <button onclick="hideNavigation()">Close</button>
                         
                         <ul class="menu__list">
                             <li class="menu__list-item">
@@ -694,7 +696,7 @@
 -->       
         <aside class="sidebar__shopping-options">
             <h2>Shopping options</h2>
-            <button><span class="icon-x-circle"></span> Close</button> 
+            <button>Close <span class="icon-x-circle"></span></button> 
     
             <ul class="sidebar__shopping-options--layered-nav-list">
                 <li class="layered-nav-list__item--title">
