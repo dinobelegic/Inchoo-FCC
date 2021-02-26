@@ -33,20 +33,7 @@
         color: var(--secondary__color);
     }
 }
-/*    NA HOVER SE OTVARA FILTERS BOX
-.shopping-options:hover {
-    margin-bottom: pxtorem(166px);
 
-    & .shopping-options__filters {
-        display: block;
-        margin-top: 20px;
-        border: 1px solid var(--neutral-10);
-        width: 93vw;
-        align-self: flex-start;
-        padding: 12px 0 21px 12px;
-    }
-}
-*/
 .filters-title { 
     font-family: Open Sans; 
     font-size: 12px;
@@ -76,8 +63,6 @@
         padding-right: pxtorem(3px);
     } 
 }
-
-
   
 .shopping-options__button {
     padding: pxtorem(9px) pxtorem(12px);
@@ -98,26 +83,27 @@
     display: flex; 
 }
 
-.toolbar-view > li {
+.toolbar-view li {
     width: pxtorem(42px);
     height: pxtorem(42px);
     display: flex;
     justify-content: center;
-    border: 1px solid var(--secondary__color);
-    background-color: var(--white-color);
-    color: var(--secondary__color);
-
-    &:hover {
-        background-color: var(--primary__color); 
-        color: var(--white-color);
-    }
-
+    border: 1px solid var(--secondary__color);   
     @media (--large) {
         width: pxtorem(45px);
         height: pxtorem(48px);
     }
 } 
 
+.active {
+    background-color: var(--primary__color);
+    color: white;
+}
+
+.inactive {
+    background-color: white;
+    color: var(--secondary__color);
+}
 
 .toolbar-sort {
     display: flex;
@@ -180,7 +166,7 @@
     flex-grow: 0;
 
     @media (--large) { 
-    font-size: 14px; 
+    font-size: pxtorem(14px); 
     }
 }
 
@@ -193,7 +179,7 @@
     font-size: pxtorem(12px);
     line-height: pxtorem(21px);  
     color: var(--primary__color);   
-    margin: pxtorem(0px) pxtorem(3px);
+    margin: 0 pxtorem(3px);
     margin-bottom: pxtorem(16px);
 
     @media (--large) { 
@@ -407,3 +393,4 @@
         padding-right: 0.857143rem;
     }
 }
+
