@@ -2,13 +2,20 @@
 
 let buttonsGridAndList = document.getElementsByClassName("toolbar-view");
 let buttons = buttonsGridAndList[0].children; 
+let ratingStars = document.getElementsByClassName("product-rating"); 
 
-buttons[0].setAttribute("class", "active");
-buttons[1].setAttribute("class", "inactive");
+buttons[0].setAttribute("class", "active-button");
+buttons[1].setAttribute("class", "inactive-button");
+
+ratingStars[3].style.justifyContent = ("center");
+ratingStars[2].style.justifyContent = ("center");
+ratingStars[1].style.justifyContent = ("center");
+ratingStars[0].style.justifyContent = ("center");
 
 // Interchange element classes between grid and list
 
 function changeGridToList() {
+
     let parentDiv = document.getElementsByClassName("product-grid");
     let firstChild = document.getElementsByClassName("product-grid__item");
     let secondChildImage = document.getElementsByClassName("product-grid__item-img");
@@ -18,12 +25,16 @@ function changeGridToList() {
     let secondChildDetailsPriceStrong = document.getElementsByClassName("product-grid__item-price");
     let thirdChildActions = document.getElementsByClassName("product-grid__item-actions");
 
-    buttons[0].setAttribute("class", "inactive");
-    buttons[1].setAttribute("class", "active");
-    console.log(buttons);
+    buttons[0].setAttribute("class", "inactive-button");
+    buttons[1].setAttribute("class", "active-button");
+    
+    ratingStars[3].style.justifyContent = ("flex-start");
+    ratingStars[2].style.justifyContent = ("flex-start");
+    ratingStars[1].style.justifyContent = ("flex-start");
+    ratingStars[0].style.justifyContent = ("flex-start");
 
     parentDiv[0].setAttribute("class", "product-list"); 
-  
+
     firstChild[3].setAttribute("class", "product-list__item"); 
     firstChild[2].setAttribute("class", "product-list__item");
     firstChild[1].setAttribute("class", "product-list__item");
@@ -58,6 +69,7 @@ function changeGridToList() {
     thirdChildActions[2].setAttribute("class", "product-list__item-actions");
     thirdChildActions[1].setAttribute("class", "product-list__item-actions");
     thirdChildActions[0].setAttribute("class", "product-list__item-actions");
+
 }
 
 function changeListToGrid() {
@@ -69,9 +81,15 @@ function changeListToGrid() {
     let secondChildDetailsPrice = document.getElementsByClassName("product-list__item-price");
     let secondChildDetailsPriceStrong = document.getElementsByClassName("product-list__item-price");
     let thirdChildActions = document.getElementsByClassName("product-list__item-actions");
+    
 
-    buttons[0].setAttribute("class", "active");
-    buttons[1].setAttribute("class", "inactive");
+    buttons[0].setAttribute("class", "active-button");
+    buttons[1].setAttribute("class", "inactive-button");
+
+    ratingStars[3].style.justifyContent = ("center");
+    ratingStars[2].style.justifyContent = ("center");
+    ratingStars[1].style.justifyContent = ("center");
+    ratingStars[0].style.justifyContent = ("center");
 
     parentDiv[0].setAttribute("class", "product-grid"); 
 
@@ -109,6 +127,9 @@ function changeListToGrid() {
     thirdChildActions[2].setAttribute("class", "product-grid__item-actions");
     thirdChildActions[1].setAttribute("class", "product-grid__item-actions");
     thirdChildActions[0].setAttribute("class", "product-grid__item-actions");
+
+    
+
 }
 
 // Show and hide sidebar menu on mobile
@@ -122,3 +143,23 @@ function hideSidebar() {
     let hide = document.getElementById("sidebar"); 
     hide.classList.remove("sidebar-show"); 
 }
+
+
+// Open and close sidebar menu options
+
+let sidebarTitles = document.querySelectorAll(".layered-nav-list__item--title");
+
+sidebarTitles.forEach(sidebarTitle => {
+    sidebarTitle.addEventListener("click", e => {
+        sidebarTitle.classList.toggle("expand-sidebar");
+    })
+})
+
+let sidebarTitlesInner = document.querySelectorAll(".layered-nav-list__item--inner-list");
+
+sidebarTitlesInner.forEach(innerTitle => {
+    innerTitle.addEventListener("click", e => {
+        innerTitle.classList.toggle("expand-sidebar-innerlist"); 
+    })
+})
+

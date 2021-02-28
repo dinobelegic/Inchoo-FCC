@@ -30,3 +30,13 @@ function hideNavigation() {
     let hide = document.getElementById("menu"); 
     hide.classList.remove("show-menu"); 
 }
+ 
+// Subscribe to newsletter
+
+document.getElementsByClassName("button--subscribe")[0].addEventListener('click', newsletterSubscription)
+
+function newsletterSubscription() {
+
+    document.forms["newsletter"].submit();
+    alert("Thank you for subscribing to our shop.")
+}

@@ -18,7 +18,8 @@
           rel="stylesheet"
         />
         <script src="main.js" async></script>
-        <script src="product-page.js" async></script>
+        <script src="product-page.js" async></script> 
+        <script src="shop.js" async></script> 
     </head> 
 <body>
     <header class="header">
@@ -74,26 +75,24 @@
                                     </h2>
                                     
                                     <ul class="shopping-cart__list-item--details">
-                                        <li class="shopping-cart__list-item--details-single"><strong>Color:</strong>Black</li>
-                                        <li class="shopping-cart__list-item--details-single"><strong>$21.99</strong></li>
-                                        <li class="shopping-cart__list-item--details-single">
+                                        <li class="shopping-cart__list-item--details-single single-color"><strong>Color:</strong>Black</li>
+                                        <li class="shopping-cart__list-item--details-single single-price"><strong>$21.99</strong></li>
+                                        <li class="shopping-cart__list-item--details-single single-qty">
                                             <form>
                                                 <fieldset>
                                                     <legend class="visually-hidden">Item qty control</legend>
                                                     <label for="qty">Qty:</label>
-                                                    <input name="qty" type="number" placeholder="1">
+                                                    <input class="cart-qty-input" name="qty" type="number" value="1">
                                                 </fieldset>
                                             </form>
                                         </li>
                                     </ul> 
                                 </div> 
-                            </li>
-                            <li>
                                 <div class="shopping-cart__list-item--actions">
-                                    <span class="icon-edit"></span>
-                                    <span class="icon-trash"></span> 
+                                    <button class="edit-item"><span class="icon-edit"></span></button>
+                                    <button class="remove-item"><span class="icon-trash"></span></button> 
                                 </div>
-                            </li>
+                            </li> 
                             <li class="shopping-cart__list-item">
                                 <picture class="shopping-cart__list-item--img">
                                     <source srcset="./assets/product-single/cart/frisbee-orange-desktop.jpg" 
@@ -104,30 +103,28 @@
 
                                 <div class="shopping-cart__list-item-info">
                                     <h2 class="shopping-cart__list-item--title">
-                                        <a href="">Item name 1</a>
+                                        <a href="">Item name 2</a>
                                     </h2>
                                     
                                     <ul class="shopping-cart__list-item--details">
-                                        <li class="shopping-cart__list-item--details-single"><strong>Color:</strong>Black</li>
-                                        <li class="shopping-cart__list-item--details-single"><strong>$21.99</strong></li>
-                                        <li class="shopping-cart__list-item--details-single">
+                                        <li class="shopping-cart__list-item--details-single single-color"><strong>Color:</strong>Black</li>
+                                        <li class="shopping-cart__list-item--details-single single-price"><strong>$21.99</strong></li>
+                                        <li class="shopping-cart__list-item--details-single single-qty">
                                             <form>
                                                 <fieldset>
                                                     <legend class="visually-hidden">Item qty control</legend>
                                                     <label for="qty">Qty:</label>
-                                                    <input name="qty" type="number" placeholder="1">
+                                                    <input class="cart-qty-input" name="qty" type="number" value="1">
                                                 </fieldset>
                                             </form>
                                         </li>
                                     </ul> 
                                 </div> 
-                            </li>
-                            <li>
                                 <div class="shopping-cart__list-item--actions">
-                                    <span class="icon-edit"></span>
-                                    <span class="icon-trash"></span> 
+                                    <button class="edit-item"><span class="icon-edit"></span></button>
+                                    <button class="remove-item"><span class="icon-trash"></span></button> 
                                 </div>
-                            </li>
+                            </li> 
                         </ol>
 
                         <table class="shopping-cart__table">
@@ -241,9 +238,9 @@
     </header>
 
     <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a href="./index.html" title="Grabsee Home">Home</a></li>
-        <li class="breadcrumbs__item"><a href="./layout-category-listing.html" title="Grabsee Main Category">Freesbe</a></li>
-        <li tabindex="0" class="breadcrumbs__item">Ultimate Frisbee</li>
+        <li class="breadcrumbs__item" aria-label="breadcrumb"><a href="./index.html" title="Grabsee Home">Home</a></li>
+        <li class="breadcrumbs__item" aria-label="breadcrumb"><a href="./layout-category-listing.html" title="Grabsee Main Category">Freesbe</a></li>
+        <li tabindex="0" class="breadcrumbs__item" aria-label="breadcrumb" aria-current="location">Ultimate Frisbee</li>
     </ul>
     <main class="container product-container"> 
         
@@ -292,10 +289,10 @@
                 <fieldset class="product-qty">
                     <legend class="visually-hidden">Item qty</legend>
                     <label for="qty">Qty:</label>
-                    <input name="qty" type="number" placeholder="1">
+                    <input name="qty" type="number" value="1">
                 </fieldset>
                 
-                <button class="button button--primary" type="submit">Add to Cart</button>
+                <button class="button button--primary shop-button" type="submit">Add to Cart</button>
             </div>
 
             <ul class="product-actions">
@@ -359,13 +356,13 @@
             <h2 class="footer-top__heading">Newsletter</h2>
             <p tabindex="0" class="footer-top__text">Sign up for our newsletter and be the first to find out about new products, discounts and more.</p>
 
-            <form action="">
+            <form name="newsletter" action="" method="GET">
                 <fieldset>
                     <legend class="visually-hidden">Grabsee Newsletter Form</legend> 
                     <label for="newsletter" tabindex="0" class="visually-hidden">Enter your email in order to become the Grabsee subscriber</label>
 
-                    <input placeholder="Enter your email address" name="newsletter" type="email">
-                    <button class="button button--primary">Subscribe</button>
+                    <input placeholder="Enter your email address" name="newsletter" type="email" required />
+                    <button type="submit" class="button button--primary button--subscribe">Subscribe</button>
                 </fieldset>
             </form>
         </section>

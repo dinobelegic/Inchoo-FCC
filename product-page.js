@@ -18,5 +18,5 @@ function handleClickOnDetails() {
 detailsElements.forEach(function (item) {
   item.addEventListener("click", handleClickOnDetails);
 });
-
+ 
 

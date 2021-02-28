@@ -36,11 +36,11 @@
 
 .filters-title { 
     font-family: Open Sans; 
-    font-size: 12px;
-    line-height: 24px;
+    font-size: pxtorem(12px);
+    line-height: pxtorem(24px);
     color: #12167A;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: pxtorem(5px);
 }
 
 .filters-list {
@@ -95,12 +95,12 @@
     }
 } 
 
-.active {
+.active-button {
     background-color: var(--primary__color);
     color: white;
 }
 
-.inactive {
+.inactive-button {
     background-color: white;
     color: var(--secondary__color);
 }
@@ -126,7 +126,7 @@
 
     @media (--large) {
         visibility: visible;
-        width: 90px;
+        width: pxtorem(90px);
         align-self: center;
     }
 }
@@ -157,7 +157,8 @@
 .product-grid__item-title {
     font-family: Open Sans; 
     font-size: pxtorem(12px);
-    line-height: pxtorem(24px);  
+    line-height: pxtorem(24px);
+    margin-bottom: pxtorem(16px);  
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -166,7 +167,8 @@
     flex-grow: 0;
 
     @media (--large) { 
-    font-size: pxtorem(14px); 
+    font-size: pxtorem(14px);
+    margin-bottom: pxtorem(5px);  
     }
 }
 
@@ -183,8 +185,8 @@
     margin-bottom: pxtorem(16px);
 
     @media (--large) { 
-    font-size: 14px;
-    line-height: 18px; 
+    font-size: pxtorem(14px);
+    line-height: pxtorem(18px); 
     margin-bottom: pxtorem(27px);
     }
 
@@ -229,6 +231,10 @@
 
 .product-grid__item-actions a {
     text-decoration: none; 
+}
+
+.product-grid__item:hover .shop-button {
+    background-color: var(--secondary__color);
 }
 
 .toolbar-bottom {
@@ -350,12 +356,17 @@
     }
 }
 
-.product-list__item-details .rating-stars {   
+.product-rating {
+    display: flex;
+}
+
+.icon-star {   
     flex: none;
     order: 1;
     flex-grow: 0; 
     color: var(--secondary__color);
     margin-bottom: pxtorem(12px);
+    justify-self: center;
 }
 
 .product-list__item-price { 
@@ -394,3 +405,6 @@
     }
 }
 
+.product-list__item:hover .shop-button {
+    background-color: var(--secondary__color);
+}
