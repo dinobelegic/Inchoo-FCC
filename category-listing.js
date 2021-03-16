@@ -1,6 +1,6 @@
 // Locating and setting initial classes on grid and list buttons
 
-let buttonsGridAndList = document.getElementsByClassName("toolbar-view");
+let buttonsGridAndList = document.getElementsByClassName("toolbar-view"); 
 let buttons = buttonsGridAndList[0].children; 
 let ratingStars = document.getElementsByClassName("product-rating"); 
 
@@ -128,8 +128,6 @@ function changeListToGrid() {
     thirdChildActions[1].setAttribute("class", "product-grid__item-actions");
     thirdChildActions[0].setAttribute("class", "product-grid__item-actions");
 
-    
-
 }
 
 // Show and hide sidebar menu on mobile
@@ -144,22 +142,72 @@ function hideSidebar() {
     hide.classList.remove("sidebar-show"); 
 }
 
-
 // Open and close sidebar menu options
 
-let sidebarTitles = document.querySelectorAll(".layered-nav-list__item--title");
+function expandSidebarListColor() {
+    let sidebarTitles = document.querySelectorAll(".layered-nav-list__item--title"); 
+    let sidebarInnerList = document.querySelectorAll(".layered-nav-list__item--inner-list");    
+        sidebarTitles[0].classList.toggle("expand-sidebar");  
+        sidebarInnerList[0].classList.toggle("expand-sidebar-innerlist"); 
+}
 
-sidebarTitles.forEach(sidebarTitle => {
-    sidebarTitle.addEventListener("click", e => {
-        sidebarTitle.classList.toggle("expand-sidebar");
-    })
+function expandSidebarListSize() {
+    let sidebarTitles = document.querySelectorAll(".layered-nav-list__item--title"); 
+    let sidebarInnerList = document.querySelectorAll(".layered-nav-list__item--inner-list");
+        sidebarTitles[1].classList.toggle("expand-sidebar");  
+        sidebarInnerList[1].classList.toggle("expand-sidebar-innerlist"); 
+}
+
+function expandSidebarListMaterial() {
+    let sidebarTitles = document.querySelectorAll(".layered-nav-list__item--title"); 
+    let sidebarInnerList = document.querySelectorAll(".layered-nav-list__item--inner-list");
+        sidebarTitles[2].classList.toggle("expand-sidebar");  
+        sidebarInnerList[2].classList.toggle("expand-sidebar-innerlist"); 
+}
+
+function expandSidebarListPrice() {
+    let sidebarTitles = document.querySelectorAll(".layered-nav-list__item--title"); 
+    let sidebarInnerList = document.querySelectorAll(".layered-nav-list__item--inner-list");
+        sidebarTitles[3].classList.toggle("expand-sidebar");  
+        sidebarInnerList[3].classList.toggle("expand-sidebar-innerlist"); 
+}
+
+
+/**
+ * Show / hide filters list 
+ */
+
+ let filtersContainer = document.querySelector(".shopping-options__filters-hidden");
+ let filtersTitle = document.querySelector(".filters-title-hidden");
+ let filtersList = document.querySelector(".filters-list-hidden");
+ let filtersClearListButton = document.querySelector(".shopping-options__filters-clear-button-hidden");
+
+ let shopByButton = document.querySelector(".shopping-options__button");
+
+ shopByButton.addEventListener("click", () => {
+    if(filtersContainer.classList.contains("shopping-options__filters-hidden")) {
+
+        filtersContainer.classList.add("shopping-options__filters-active");
+        filtersContainer.classList.remove("shopping-options__filters-hidden");
+        filtersTitle.classList.add("filters-title");
+        filtersTitle.classList.remove("filters-title-hidden");
+        filtersList.classList.add("filters-list");
+        filtersList.classList.remove("filters-list-hidden");
+        filtersClearListButton.classList.add("shopping-options__filters-clear-button");
+        filtersClearListButton.classList.remove("shopping-options__filters-clear-button-hidden");  
+     } 
+ })
+  
+ filtersClearListButton.addEventListener("click", () => {
+    filtersContainer.classList.add("shopping-options__filters-hidden");
+    filtersContainer.classList.remove("shopping-options__filters-active");
+    filtersTitle.classList.add("filters-title-hidden");
+    filtersTitle.classList.remove("filters-title");
+    filtersList.classList.add("filters-list-hidden");
+    filtersList.classList.remove("filters-list");
+    filtersClearListButton.classList.add("shopping-options__filters-clear-button-hidden");
+    filtersClearListButton.classList.remove("shopping-options__filters-clear-button");
 })
 
-let sidebarTitlesInner = document.querySelectorAll(".layered-nav-list__item--inner-list");
-
-sidebarTitlesInner.forEach(innerTitle => {
-    innerTitle.addEventListener("click", e => {
-        innerTitle.classList.toggle("expand-sidebar-innerlist"); 
-    })
-})
-
+  
+ 

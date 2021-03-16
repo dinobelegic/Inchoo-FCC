@@ -11,30 +11,55 @@
     }
 }
 
-.shopping-options {  
+.shopping-options {
     display: flex; 
     flex-flow: column;
-    width: pxtorem(109px);
-    height: pxtorem(42px);
-    align-items: center;   
-    border: 1px solid #EC1D2E;  
-    margin-bottom: pxtorem(20px); 
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto; 
+    align-items: center; 
+    margin-bottom: 1.25rem; 
+}
 
-    @media (--large) {
-        display: none;
-    }
+/* za large screen se hidea cijeli button SHOP BY i filter lista */ 
+.shopping-options-hidden {  
+    display: none;  
+}
+/* za large screen se hidea samo button SHOP BY ako ima odabranih filtera */
+.shopping-options__button-hidden {  
+    display: none;  
+}
+
+.shopping-options__filters-active {
+    display: block;
+    width: 100%;
+    border: 1px solid #CFCFCF; 
+    padding: 12px;
+}
+
+.shopping-options__filters-clear-button {
+    color: var(--secondary__color);
 } 
 
-.shopping-options__filters {
+.shopping-options__filters-clear-button-hidden {
     display: none;
+}
 
-    & button {
-        color: var(--secondary__color);
-    }
+.shopping-options__button {
+    padding: 0.5625rem 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.5rem;
+    letter-spacing: 0.05em;
+    color: var(--secondary__color);
+    border: 1px solid rgb(236, 29, 46);
+    box-shadow: rgb(0 0 0 / 10%) 0px 5px 10px;
+    margin-bottom: 1.25rem;
+    width: pxtorem(109px);
+    align-self: flex-start;
 }
 
 .filters-title { 
+    display: block;
     font-family: Open Sans; 
     font-size: pxtorem(12px);
     line-height: pxtorem(24px);
@@ -43,15 +68,27 @@
     margin-bottom: pxtorem(5px);
 }
 
+.filters-title-hidden {
+    display: none;
+}
+
 .filters-list {
     display: flex;
     justify-content: flex-start;
+}
+
+.filters-list-hidden {
+    display: none;
 }
 
 .filters-list__item {
     font-size: pxtorem(12px);
     line-height: pxtorem(24px);  
     color: var(--primary__color);
+}
+
+.filters-list__item-hidden {
+    display: none;
 }
 
 .filters-list__item:first-child { 
@@ -62,15 +99,6 @@
         content: "\e91d";
         padding-right: pxtorem(3px);
     } 
-}
-  
-.shopping-options__button {
-    padding: pxtorem(9px) pxtorem(12px);
-    text-transform: uppercase; 
-    font-weight: bold; 
-    line-height: pxtorem(24px);  
-    letter-spacing: 0.05em;
-    color: var(--secondary__color);
 }
 
 .toolbar {
@@ -108,9 +136,9 @@
 .toolbar-sort {
     display: flex;
     height: pxtorem(42px);
-}
+} 
 
-.toolbar-sort select {
+.toolbar-sort-select {
     margin-right: pxtorem(6px);
     border: 1px solid var(--neutral-25);
     height: pxtorem(42px);
@@ -121,7 +149,7 @@
     } 
 }
 
-.toolbar-sort label {
+.toolbar-sort-label {
     visibility: hidden;
 
     @media (--large) {
@@ -131,7 +159,7 @@
     }
 }
 
-.toolbar-sort button {
+.toolbar-sort-button {
 
     @media (--large) {
         height: pxtorem(48px);

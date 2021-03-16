@@ -19,6 +19,30 @@
     }
 }
 
+.img1 {
+    display: none;
+}
+
+.img2 {
+    display: none;
+}
+
+.img3 {
+    display: none;
+}
+
+.img1-show {
+    display: block;
+}
+
+.img2-show {
+    display: block;
+}
+
+.img3-show {
+    display: block;
+}
+
 .product-detail__thumbnails {
     display: flex;
 
@@ -38,10 +62,15 @@
 
 .product-title {  
     font-weight: normal; 
+    font-size: pxtorem(24px);
     line-height: pxtorem(42px);  
     text-transform: capitalize; 
     color: var(--text__color);
     margin-bottom: pxtorem(23px);
+
+    @media(--large) {
+        font-size: pxtorem(28px);
+    }
 }
 
 .product-short-info {

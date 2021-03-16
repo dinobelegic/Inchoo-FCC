@@ -17,9 +17,6 @@
           href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
           rel="stylesheet"
         />
-        <script src="main.js" async></script>
-        <script src="product-page.js" async></script> 
-        <script src="shop.js" async></script> 
     </head> 
 <body>
     <header class="header">
@@ -245,25 +242,40 @@
     <main class="container product-container"> 
         
         <div class="product-detail">
-            <picture class="product-detail__img">
+            <picture class="product-detail__img img1 img1-show" >
                 <source srcset="./assets/product-single/frisbee-black-desktop.jpg" 
                     media="(min-width: 1024px)"/>
                 <source srcset="./assets/product-single/frisbee-black-mob.jpg">
                 <img src="./assets/product-single/frisbee-black-mob.jpg" alt="Product image">
+            </picture>
+            <picture class="product-detail__img img2" >
+                <source srcset="./assets/product-single/frisbee-orange-desktop.jpg" 
+                    media="(min-width: 1024px)"/>
+                <source srcset="./assets/product-single/frisbee-orange-mob.jpg">
+                <img src="./assets/product-single/frisbee-orange-mob.jpg" alt="Product image">
+            </picture>
+            <picture class="product-detail__img img3" >
+                <source srcset="./assets/product-single/frisbee-white-desktop.jpg" 
+                    media="(min-width: 1024px)"/>
+                <source srcset="./assets/product-single/frisbee-white-mob.jpg">
+                <img src="./assets/product-single/frisbee-white-mob.jpg" alt="Product image">
             </picture> 
 
             <ul class="product-detail__thumbnails">
-                <li>
+                <li onclick="displayBlackImage()">
                     <img src="./assets/product-single/frisbee-black-mob-thumb.jpg" alt="Product image thumbnail">
                 </li>
-                <li>
+                <li onclick="displayOrangeImage()">
                     <img src="./assets/product-single/frisbee-orange-mob-thumb.jpg" alt="Product image thumbnail">
                 </li> 
+                <li onclick="displayWhiteImage()">
+                    <img src="./assets/product-single/frisbee-white-mob-thumb.jpg" alt="Product image thumbnail">
+                </li>
             </ul>
         </div>
 
         <div class="product-description">
-            <h1 class="product-title">Inova Product Name</h1>
+            <h2 class="product-title">Inova Product Name</h2>
             <div class="product-short-info">
                 <p class="product-short-info__in-stock">In stock</p>
                 <p class="product-short-info__sku"><strong>SKU:</strong> WH12</p>
@@ -401,6 +413,8 @@
             <small tabindex="0">Copyright &reg; 2021 Grabsbee</small>
         </div> 
     </footer>
-    
+    <script src="main.js" async></script>
+    <script src="product-page.js" async></script> 
+    <script src="shop.js" async></script> 
 </body>
 </html>

@@ -30,10 +30,3 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
-
-// Buy the disk slider button
-
-function buyTheDisk() {
-    location.href = "./layout-category-listing.html";
-  }
-

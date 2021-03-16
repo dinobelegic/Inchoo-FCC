@@ -67,19 +67,7 @@
         top: pxtorem(12px);
         right: 0;  
     }
-
-
-    &:hover {
-        height: 100%;
-        border-bottom: none;
-    }
-
-    &:hover .layered-nav-list__item--inner-list {
-        display: block;
-        padding-left: pxtorem(12px);
-        margin-top: pxtorem(9px);
-    }
-
+ 
     @media (--large) {
         height: pxtorem(48px);
         font-family: Anton; 
@@ -97,6 +85,10 @@
             right: 0;  
         }  
     }
+}
+
+.layered-nav-list__item--title:hover {
+    cursor: pointer;
 }
 
 .layered-nav-list__item--inner-list {
@@ -125,13 +117,11 @@
 
     @media (--large) {
         display: block;
-        height: pxtorem(48px);
+        height: 100%;
         font-family: Anton; 
         font-weight: normal;
-        line-height: pxtorem(18px);  
-        padding-top: pxtorem(15px);
-        position: relative; 
-        border-bottom: 1px solid var(--neutral-10);
+        line-height: pxtorem(18px);   
+        position: relative;  
     }
 }
 

@@ -16,9 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
-    <script src="main.js" async></script>
-    <script src="category-listing.js" async></script> 
-    <script src="shop.js" async></script> 
 </head>
 <body>
     <header class="header">
@@ -249,13 +246,13 @@
             <div class="shopping-options">
                 <button class="shopping-options__button" onclick="showSidebar()">Shop by <span class="icon-plus-circle"></span></button>
 
-                <div class="shopping-options__filters">
-                    <h2 class="filters-title">Now shopping by</h2>
-                    <ul class="filters-list">
+                <div class="shopping-options__filters-hidden">
+                    <h2 class="filters-title-hidden">Now shopping by</h2>
+                    <ul class="filters-list-hidden">
                         <li class="filters-list__item">Style: </li>
                         <li class="filters-list__item">Full zip</li> 
                     </ul>
-                    <button class="">Clear All filters</button>
+                    <button class="shopping-options__filters-clear-button-hidden">Clear All filters</button>
                 </div> 
             </div> 
     
@@ -267,25 +264,24 @@
                     </ul>
     
                     <div class="toolbar-sort">
-                        <label for="sort-by">Sort by:</label>
-                        <select type="select" name="sort-by" id="sort-by">
+                        <label class="toolbar-sort-label" for="sort-by">Sort by:</label>
+                        <select class="toolbar-sort-select" type="select" name="sort-by" id="sort-by">
                             <option value="bestseller">Bestseller</option>
                             <option value="price">Price</option>
                         </select>
-                        <button title="Set direction"><span class="icon-arrow-down"></span></button>
+                        <button class="toolbar-sort-button" title="Set direction"><span class="icon-arrow-down"></span></button>
                     </div>
                 </div>
     
                 <ul class="product-grid">   
-                    <li class="product-grid__item">
-                        <picture class="product-grid__item-img">
-                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
-                                media="(min-width: 1024px)" 
-                            />
-                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
-                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
-                        </picture>
-    
+                    <li class="product-grid__item"> 
+                            <picture class="product-grid__item-img">
+                                <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                    media="(min-width: 1024px)" 
+                                />
+                                <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                                <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                            </picture> 
                         <div class="product-grid__item-details">
                             <h2 class="product-grid__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
                             <div class="product-rating">
@@ -309,15 +305,14 @@
                             </ul> 
                         </div> 
                     </li>
-                    <li class="product-grid__item">
-                        <picture class="product-grid__item-img">
-                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
-                                media="(min-width: 1024px)" 
-                            />
-                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
-                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
-                        </picture>
-    
+                    <li class="product-grid__item"> 
+                            <picture class="product-grid__item-img">
+                                <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                    media="(min-width: 1024px)" 
+                                />
+                                <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                                <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                            </picture> 
                         <div class="product-grid__item-details">
                             <h2 class="product-grid__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
                             <div class="product-rating">
@@ -341,15 +336,14 @@
                             </ul> 
                         </div> 
                     </li>
-                    <li class="product-grid__item">
-                        <picture class="product-grid__item-img">
-                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
-                                media="(min-width: 1024px)" 
-                            />
-                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
-                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
-                        </picture>
-    
+                    <li class="product-grid__item"> 
+                            <picture class="product-grid__item-img">
+                                <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                    media="(min-width: 1024px)" 
+                                />
+                                <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                                <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                            </picture> 
                         <div class="product-grid__item-details">
                             <h2 class="product-grid__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
                             <div class="product-rating">
@@ -373,15 +367,14 @@
                             </ul> 
                         </div> 
                     </li>
-                    <li class="product-grid__item">
-                        <picture class="product-grid__item-img">
-                            <source srcset="./assets/categories/frisbee-black-desktop.jpg"
-                                media="(min-width: 1024px)" 
-                            />
-                            <source srcset="./assets/categories/frisbee-black-mob.jpg" />
-                            <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
-                        </picture>
-    
+                    <li class="product-grid__item"> 
+                            <picture class="product-grid__item-img">
+                                <source srcset="./assets/categories/frisbee-black-desktop.jpg"
+                                    media="(min-width: 1024px)" 
+                                />
+                                <source srcset="./assets/categories/frisbee-black-mob.jpg" />
+                                <img src="./assets/categories/frisbee-black-mob.jpg" alt="Product image">
+                            </picture> 
                         <div class="product-grid__item-details">
                             <h2 class="product-grid__item-title"><a href="/layout-product-page.html">Innova Pulsar</a></h2>
                             <div class="product-rating">
@@ -432,7 +425,7 @@
             <button onclick="hideSidebar()">Close <span class="icon-x-circle"></span></button> 
     
             <ul class="sidebar__shopping-options--layered-nav-list">
-                <li class="layered-nav-list__item--title">
+                <li class="layered-nav-list__item--title" onclick="expandSidebarListColor()">
                     Color
                     <ul class="layered-nav-list__item--inner-list">
                         <li class="inner-list__item">
@@ -449,7 +442,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="layered-nav-list__item--title">
+                <li class="layered-nav-list__item--title" onclick="expandSidebarListSize()">
                     Size
                     <ul class="layered-nav-list__item--inner-list">
                         <li class="inner-list__item">
@@ -466,7 +459,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="layered-nav-list__item--title">
+                <li class="layered-nav-list__item--title" onclick="expandSidebarListMaterial()">
                     Material
                     <ul class="layered-nav-list__item--inner-list">
                         <li class="inner-list__item">
@@ -479,7 +472,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="layered-nav-list__item--title">
+                <li class="layered-nav-list__item--title" onclick="expandSidebarListPrice()">
                     Price
                     <ul class="layered-nav-list__item--inner-list">
                         <li class="inner-list__item">
@@ -546,5 +539,8 @@
             <small tabindex="0">Copyright &reg; 2021 Grabsbee</small>
         </div> 
     </footer>
+    <script src="main.js" async></script>
+    <script src="category-listing.js" async></script> 
+    <script src="shop.js" async></script> 
 </body>
 </html>

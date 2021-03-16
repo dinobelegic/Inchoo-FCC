@@ -17,9 +17,6 @@
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
-    <script src="main.js" async></script>
-    <script src="home.js" async></script> 
-    <script src="shop.js" async></script> 
 </head>
 
 <body>
@@ -246,7 +243,7 @@
                 <li class="home-slider-item fade">
                     <div class="home-slider-item__inner">
                         <h2 class="home-slider-item__title">The flying disk store</h2>
-                        <button class="button button--primary home-slider-item__button" onclick="buyTheDisk()">Buy the disk</button>
+                        <a class="home-slider-button" href="./layout-category-listing.html"><button class="button button--primary home-slider-item__button">Buy the disk</button></a>
                     </div> 
                     <picture class="home-slider-item__img">
                         <source srcset="./assets/home/slide-1-desktop.jpg"
@@ -259,7 +256,7 @@
                 <li class="home-slider-item fade">
                     <div class="home-slider-item__inner">
                         <h2 class="home-slider-item__title">The flying disk store</h2>
-                        <button class="button button--primary home-slider-item__button" onclick="buyTheDisk()">Buy the disk</button>
+                        <a class="home-slider-button" href="./layout-category-listing.html"><button class="button button--primary home-slider-item__button">Buy the disk</button></a>
                     </div> 
                     <picture class="home-slider-item__img">
                         <source srcset="./assets/home/slide-2-desktop.jpg"
@@ -272,7 +269,7 @@
                 <li class="home-slider-item fade">
                     <div class="home-slider-item__inner">
                         <h2 class="home-slider-item__title">The flying disk store</h2>
-                        <button class="button button--primary home-slider-item__button" onclick="buyTheDisk()">Buy the disk</button>
+                        <a class="home-slider-button" href="./layout-category-listing.html"><button class="button button--primary home-slider-item__button">Buy the disk</button></a>
                     </div> 
                     <picture class="home-slider-item__img">
                         <source srcset="./assets/home/slide-3-desktop.jpg"
@@ -292,7 +289,7 @@
         </section>
 
         <section class="home-featured">
-            <h2 tabindex="0">Featured Categories</h2>
+            <h2 class="home-featured-title" tabindex="0">Featured Categories</h2>
 
             <ul class="home-featured-list">
                 <li class="home-featured-list-item"> 
@@ -390,5 +387,8 @@
             <small tabindex="0">Copyright &reg; 2021 Grabsbee</small>
         </div> 
     </footer>
+    <script src="main.js" async></script>
+    <script src="home.js" async></script> 
+    <script src="shop.js" async></script> 
 </body>
 </html>
