@@ -208,6 +208,3 @@ function expandSidebarListPrice() {
     filtersClearListButton.classList.add("shopping-options__filters-clear-button-hidden");
     filtersClearListButton.classList.remove("shopping-options__filters-clear-button");
 })
-
-  
- 
