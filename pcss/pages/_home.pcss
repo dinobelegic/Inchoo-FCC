@@ -120,6 +120,11 @@
 
 .home-featured {
   position: relative; 
+
+  @media (--large) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 .home-featured-title{
@@ -129,14 +134,14 @@
 }
 
 .home-featured-list { 
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  height: 100%; 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 28px;
 } 
 
-.home-featured-list-item {
-  margin: pxtorem(11px) pxtorem(12px);
+.home-featured-list-item { 
   position: relative; 
 
   &::after { 
