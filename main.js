@@ -50,6 +50,8 @@ let accessoriesExpandListInnerSecond = document.querySelector(".accessories__exp
 let accessoriesExpandListTitleThird = document.querySelector(".accessories__expand-list--title-3");
 let accessoriesExpandListInnerThird = document.querySelector(".accessories__expand-list--inner-3");
 
+// Toggle navigation menu
+
 if (window.screen.width < 1024) {
     frisbeeTitle.addEventListener("click", ()=> {
         frisbeeExpandList.classList.toggle("navigation-list__level-2-show");
@@ -118,8 +120,7 @@ if (window.screen.width < 1024) {
         accessoriesExpandListInnerSecond.classList.toggle("navigation-list__level-3-show");
         accessoriesExpandListInnerThird.classList.toggle("navigation-list__level-3-show");
     })
-}
-
+} 
 
 /**
  * Subscribe to newsletter

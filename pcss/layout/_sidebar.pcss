@@ -69,10 +69,7 @@
     }
  
     @media (--large) {
-        height: pxtorem(48px);
-        font-family: Anton; 
-        font-weight: normal;
-        line-height: pxtorem(18px);  
+        height: pxtorem(48px);  
         padding-top: pxtorem(15px);
         position: relative; 
         border-bottom: 1px solid var(--neutral-10);
@@ -86,6 +83,17 @@
         }  
     }
 }
+
+.layered-nav-list__item--title h3 {
+    @media (--large) {
+        font-family: 'Anton';
+        font-weight: normal;
+        line-height: 1.5;
+        font-size: pxtorem(14px);
+        letter-spacing: 0.05em;
+    }
+}
+    
 
 .layered-nav-list__item--title:hover {
     cursor: pointer;

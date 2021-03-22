@@ -145,7 +145,7 @@ function hideSidebar() {
 // Open and close sidebar menu options
 
 function expandSidebarListColor() {
-    let sidebarTitles = document.querySelectorAll(".layered-nav-list__item--title"); 
+    let sidebarTitles = document.querySelectorAll(".layered-nav-list__item--title");
     let sidebarInnerList = document.querySelectorAll(".layered-nav-list__item--inner-list");    
         sidebarTitles[0].classList.toggle("expand-sidebar");  
         sidebarInnerList[0].classList.toggle("expand-sidebar-innerlist"); 
