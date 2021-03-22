@@ -208,3 +208,208 @@ function expandSidebarListPrice() {
     filtersClearListButton.classList.add("shopping-options__filters-clear-button-hidden");
     filtersClearListButton.classList.remove("shopping-options__filters-clear-button");
 })
+
+/**
+ * Add filters to filter list
+ */
+
+let colorOrange = document.querySelector(".color-orange");
+let colorBlack = document.querySelector(".color-black");
+let colorBlue = document.querySelector(".color-blue");
+let colorWhite = document.querySelector(".color-white");
+let sizeS = document.querySelector(".size-s");
+let sizeM = document.querySelector(".size-m");
+let sizeL = document.querySelector(".size-l");
+let strongPvc = document.querySelector(".strong-pvc");
+let carbon = document.querySelector(".carbon");
+
+colorOrange.addEventListener("click", ()=> {
+    if (filtersContainer.classList.contains("shopping-options__filters-hidden")|| filtersContainer.classList.contains("shopping-options__filters-active")) {
+        filtersContainer.classList.add("shopping-options__filters-active");
+        filtersContainer.classList.remove("shopping-options__filters-hidden");
+        filtersTitle.classList.add("filters-title");
+        filtersTitle.classList.remove("filters-title-hidden");
+        filtersList.classList.add("filters-list");
+        filtersList.classList.remove("filters-list-hidden"); 
+
+        let newListItem = document.createElement("li");
+        newListItem.classList.add("filters-list__item");  
+        newListItem.innerHTML = "Orange, ";
+        filtersList.append(newListItem);
+
+        console.log(newListItem, filtersList );
+        filtersClearListButton.classList.add("shopping-options__filters-clear-button");
+        filtersClearListButton.classList.remove("shopping-options__filters-clear-button-hidden");
+    }
+})
+
+colorBlack.addEventListener("click", ()=> {
+    if (filtersContainer.classList.contains("shopping-options__filters-hidden")|| filtersContainer.classList.contains("shopping-options__filters-active")) {
+        filtersContainer.classList.add("shopping-options__filters-active");
+        filtersContainer.classList.remove("shopping-options__filters-hidden");
+        filtersTitle.classList.add("filters-title");
+        filtersTitle.classList.remove("filters-title-hidden");
+        filtersList.classList.add("filters-list");
+        filtersList.classList.remove("filters-list-hidden");
+
+        let newListItem = document.createElement("li");
+        newListItem.classList.add("filters-list__item");  
+        newListItem.innerHTML = "Black, "; 
+        
+        filtersList.append(newListItem);
+        console.log(newListItem, filtersList );
+        filtersClearListButton.classList.add("shopping-options__filters-clear-button");
+        filtersClearListButton.classList.remove("shopping-options__filters-clear-button-hidden");
+    }
+})
+
+colorBlue.addEventListener("click", ()=> {
+    if (filtersContainer.classList.contains("shopping-options__filters-hidden")|| filtersContainer.classList.contains("shopping-options__filters-active")) {
+        filtersContainer.classList.add("shopping-options__filters-active");
+        filtersContainer.classList.remove("shopping-options__filters-hidden");
+        filtersTitle.classList.add("filters-title");
+        filtersTitle.classList.remove("filters-title-hidden");
+        filtersList.classList.add("filters-list");
+        filtersList.classList.remove("filters-list-hidden");
+
+        let newListItem = document.createElement("li");
+        newListItem.classList.add("filters-list__item");  
+        newListItem.innerHTML = "Blue, "; 
+        
+        filtersList.append(newListItem);
+        console.log(newListItem, filtersList );
+        filtersClearListButton.classList.add("shopping-options__filters-clear-button");
+        filtersClearListButton.classList.remove("shopping-options__filters-clear-button-hidden");
+    }
+})
+
+colorWhite.addEventListener("click", ()=> {
+    if (filtersContainer.classList.contains("shopping-options__filters-hidden")|| filtersContainer.classList.contains("shopping-options__filters-active")) {
+        filtersContainer.classList.add("shopping-options__filters-active");
+        filtersContainer.classList.remove("shopping-options__filters-hidden");
+        filtersTitle.classList.add("filters-title");
+        filtersTitle.classList.remove("filters-title-hidden");
+        filtersList.classList.add("filters-list");
+        filtersList.classList.remove("filters-list-hidden");
+
+        let newListItem = document.createElement("li");
+        newListItem.classList.add("filters-list__item");  
+        newListItem.innerHTML = "White, "; 
+        
+        filtersList.append(newListItem);
+        console.log(newListItem, filtersList );
+        filtersClearListButton.classList.add("shopping-options__filters-clear-button");
+        filtersClearListButton.classList.remove("shopping-options__filters-clear-button-hidden");
+    }
+})
+ 
+
+sizeS.addEventListener("click", ()=> {
+    if (filtersContainer.classList.contains("shopping-options__filters-hidden")|| filtersContainer.classList.contains("shopping-options__filters-active")) {
+        filtersContainer.classList.add("shopping-options__filters-active");
+        filtersContainer.classList.remove("shopping-options__filters-hidden");
+        filtersTitle.classList.add("filters-title");
+        filtersTitle.classList.remove("filters-title-hidden");
+        filtersList.classList.add("filters-list");
+        filtersList.classList.remove("filters-list-hidden");
+
+        let newListItem = document.createElement("li");
+        newListItem.classList.add("filters-list__item");  
+        newListItem.innerHTML = "Size S, "; 
+        
+        filtersList.append(newListItem);
+        console.log(newListItem, filtersList );
+        filtersClearListButton.classList.add("shopping-options__filters-clear-button");
+        filtersClearListButton.classList.remove("shopping-options__filters-clear-button-hidden");
+    }
+})
+
+sizeM.addEventListener("click", ()=> {
+    if (filtersContainer.classList.contains("shopping-options__filters-hidden")|| filtersContainer.classList.contains("shopping-options__filters-active")) {
+        filtersContainer.classList.add("shopping-options__filters-active");
+        filtersContainer.classList.remove("shopping-options__filters-hidden");
+        filtersTitle.classList.add("filters-title");
+        filtersTitle.classList.remove("filters-title-hidden");
+        filtersList.classList.add("filters-list");
+        filtersList.classList.remove("filters-list-hidden");
+
+        let newListItem = document.createElement("li");
+        newListItem.classList.add("filters-list__item");  
+        newListItem.innerHTML = "Size M, "; 
+        
+        filtersList.append(newListItem);
+        console.log(newListItem, filtersList );
+        filtersClearListButton.classList.add("shopping-options__filters-clear-button");
+        filtersClearListButton.classList.remove("shopping-options__filters-clear-button-hidden");
+    }
+})
+
+sizeL.addEventListener("click", ()=> {
+    if (filtersContainer.classList.contains("shopping-options__filters-hidden")|| filtersContainer.classList.contains("shopping-options__filters-active")) {
+        filtersContainer.classList.add("shopping-options__filters-active");
+        filtersContainer.classList.remove("shopping-options__filters-hidden");
+        filtersTitle.classList.add("filters-title");
+        filtersTitle.classList.remove("filters-title-hidden");
+        filtersList.classList.add("filters-list");
+        filtersList.classList.remove("filters-list-hidden");
+
+        let newListItem = document.createElement("li");
+        newListItem.classList.add("filters-list__item");  
+        newListItem.innerHTML = "Size L, "; 
+        
+        filtersList.append(newListItem);
+        console.log(newListItem, filtersList );
+        filtersClearListButton.classList.add("shopping-options__filters-clear-button");
+        filtersClearListButton.classList.remove("shopping-options__filters-clear-button-hidden");
+    }
+})
+
+strongPvc.addEventListener("click", ()=> {
+    if (filtersContainer.classList.contains("shopping-options__filters-hidden")|| filtersContainer.classList.contains("shopping-options__filters-active")) {
+        filtersContainer.classList.add("shopping-options__filters-active");
+        filtersContainer.classList.remove("shopping-options__filters-hidden");
+        filtersTitle.classList.add("filters-title");
+        filtersTitle.classList.remove("filters-title-hidden");
+        filtersList.classList.add("filters-list");
+        filtersList.classList.remove("filters-list-hidden");
+
+        let newListItem = document.createElement("li");
+        newListItem.classList.add("filters-list__item");  
+        newListItem.innerHTML = "Strong PVC, "; 
+        
+        filtersList.append(newListItem);
+        console.log(newListItem, filtersList );
+        filtersClearListButton.classList.add("shopping-options__filters-clear-button");
+        filtersClearListButton.classList.remove("shopping-options__filters-clear-button-hidden");
+    }
+})
+
+carbon.addEventListener("click", ()=> {
+    if (filtersContainer.classList.contains("shopping-options__filters-hidden")|| filtersContainer.classList.contains("shopping-options__filters-active")) {
+        filtersContainer.classList.add("shopping-options__filters-active");
+        filtersContainer.classList.remove("shopping-options__filters-hidden");
+        filtersTitle.classList.add("filters-title");
+        filtersTitle.classList.remove("filters-title-hidden");
+        filtersList.classList.add("filters-list");
+        filtersList.classList.remove("filters-list-hidden");
+
+        let newListItem = document.createElement("li");
+        newListItem.classList.add("filters-list__item");  
+        newListItem.innerHTML = "Carbon, "; 
+        
+        filtersList.append(newListItem);
+        console.log(newListItem, filtersList );
+        filtersClearListButton.classList.add("shopping-options__filters-clear-button");
+        filtersClearListButton.classList.remove("shopping-options__filters-clear-button-hidden");
+    }
+})
+ 
+
+filtersClearListButton.addEventListener("click", ()=> {
+
+    for (let i = 0; i < filtersList.children.length; i++) {
+        filtersList.removeChild;
+        
+    } 
+
+})
