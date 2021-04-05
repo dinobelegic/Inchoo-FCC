@@ -1,130 +1,128 @@
 .footer {
-    background: #000;
-    color: var(--text__color__invert);
-    margin-top: pxtorem(21px);
+  background: #000;
+  color: var(--text__color__invert);
+  margin-top: pxtorem(21px);
 
-    @media (--large) {
-        margin-top: pxtorem(48px);
-      }
+  @media (--large) {
+    margin-top: pxtorem(48px);
+  }
 }
 
 .footer-top {
-    display: grid;
-    background: var(--secondary__color);
+  display: grid;
+  background: var(--secondary__color);
 }
 
-.footer-top form { 
-    @media (--large) {
-        display: flex;
-        justify-content: center;  
-        margin-bottom: 2rem;
-    } 
+.footer-top form {
+  @media (--large) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
 
 .footer-top fieldset {
-    border: none; 
-    display: block; 
+  border: none;
+  display: block;
 
-    @media (--large) {
-        display: flex;
-        align-items: center;
-        height: pxtorem(48px);  
-    }
+  @media (--large) {
+    display: flex;
+    align-items: center;
+    height: pxtorem(48px);
+  }
 }
 
 .footer-top__heading {
-    font: 12px var(--body__type);
-    @mixin section-title;  
-    margin-top: pxtorem(21px);
-    justify-self: center;
+  font: 12px var(--body__type);
+  @mixin section-title;
+  margin-top: pxtorem(21px);
+  justify-self: center;
 }
 
-.footer-top__text { 
-    font-size: pxtorem(12px);
-    padding: 0 pxtorem(24px);
-    justify-self: center;  
+.footer-top__text {
+  font-size: pxtorem(12px);
+  padding: 0 pxtorem(24px);
+  justify-self: center;
 }
 
 .footer-top button {
-    margin: pxtorem(21px) 0;
-    width: 100%;
-    height: pxtorem(42px);
-    border-color: var(--primary__color);
+  margin: pxtorem(21px) 0;
+  width: 100%;
+  height: pxtorem(42px);
+  border-color: var(--primary__color);
 
-    @media (--large) {
-        margin: 0;
-        margin-left: pxtorem(12px);
-        width: auto;
-        height: pxtorem(48px);
-        display: flex;
-        align-items: center; 
-    }
+  @media (--large) {
+    margin: 0;
+    margin-left: pxtorem(12px);
+    width: auto;
+    height: pxtorem(48px);
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer-top input {
-    border-color: var(--secondary__color);
-    
-    @media (--large) {
-        height: pxtorem(48px);  
-        width: 20em;
-    }
+  border-color: var(--secondary__color);
+
+  @media (--large) {
+    height: pxtorem(48px);
+    width: 20em;
+  }
 }
 
 .footer-mid {
-    background: var(--primary__color);
-    padding: pxtorem(12px); 
+  background: var(--primary__color);
+  padding: pxtorem(12px);
 
-    @media (--large) { 
-
-        display: flex;
-        justify-content: space-evenly; 
-    }  
+  @media (--large) {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .footer-mid > details {
-    min-height: pxtorem(42px);
-    padding-bottom: pxtorem(12px);
+  min-height: pxtorem(42px);
+  padding-bottom: pxtorem(12px);
 }
 
 .footer-mid > details > summary::-webkit-details-marker {
-    display: none;   
+  display: none;
 }
 
-.footer-mid a { 
-    color: white;
-    text-decoration: none;
-    } 
+.footer-mid a {
+  color: white;
+  text-decoration: none;
+}
 
 .footer-mid__heading {
-    font: 12px var(--body__type);
-    @mixin section-title;  
-    letter-spacing: 0.05em;
-    margin-bottom: 0px;
-    padding-bottom: pxtorem(12px);
-    position: relative;
+  font: 12px var(--body__type);
+  @mixin section-title;
+  letter-spacing: 0.05em;
+  margin-bottom: 0px;
+  padding-bottom: pxtorem(12px);
+  position: relative;
 }
 
 .footer-mid__heading::after {
-    font-family: "Inchoo-Icons" !important;
-    content: "\e909";
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: pxtorem(14px);
+  font-family: "Inchoo-Icons" !important;
+  content: "\e909";
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: pxtorem(14px);
 
-    @media (--large) {
-        display: none;
-    }
+  @media (--large) {
+    display: none;
+  }
 }
 
 .footer-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: pxtorem(42px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: pxtorem(42px);
 
-    @media (--large) {
-        height: pxtorem(48px);
-    }
+  @media (--large) {
+    height: pxtorem(48px);
+  }
 }
-

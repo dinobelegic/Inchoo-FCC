@@ -315,7 +315,7 @@ sizeS.addEventListener("click", ()=> {
 
         let newListItem = document.createElement("li");
         newListItem.classList.add("filters-list__item");  
-        newListItem.innerHTML = "Size S, "; 
+        newListItem.innerHTML = "Size Small, "; 
         
         filtersList.append(newListItem);
         console.log(newListItem, filtersList );
@@ -335,7 +335,7 @@ sizeM.addEventListener("click", ()=> {
 
         let newListItem = document.createElement("li");
         newListItem.classList.add("filters-list__item");  
-        newListItem.innerHTML = "Size M, "; 
+        newListItem.innerHTML = "Size Medium, "; 
         
         filtersList.append(newListItem);
         console.log(newListItem, filtersList );
@@ -355,7 +355,7 @@ sizeL.addEventListener("click", ()=> {
 
         let newListItem = document.createElement("li");
         newListItem.classList.add("filters-list__item");  
-        newListItem.innerHTML = "Size L, "; 
+        newListItem.innerHTML = "Size Large, "; 
         
         filtersList.append(newListItem);
         console.log(newListItem, filtersList );

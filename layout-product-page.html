@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Product Name - Best place to get profi frisbee gear</title>
-    
-        <link href="./style.css" rel="stylesheet" type="text/css"/>
-    
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-          rel="stylesheet"
-        />
-    
-        <link
-          href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-          rel="stylesheet"
-        />
-    </head> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Name - Best place to get profi frisbee gear</title>
+
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
+
 <body>
     <header class="header">
         <div class="header__logo">
             <h1 class="logo">
                 <a href="./index.html">
                     <img src="./assets/grabsbee.svg" alt="Grabsee Webshop logo" class="logo__img">
-                </a> 
-            </h1> 
+                </a>
+            </h1>
         </div>
         <div class="header__items">
             <ul class="header__icon-list">
                 <li class="header__item">
-                    <button class="search-button" onclick="showHideSearchButton()"><span class="icon-search"></span></button>
+                    <button class="search-button" onclick="showHideSearchButton()"><span
+                            class="icon-search"></span></button>
                     <div class="search">
-                        <button class="button--no-styles" onclick="showHideSearchButton()">Close <span class="icon-x-circle"></span></button>
+                        <button class="button--no-styles" onclick="showHideSearchButton()">Close <span
+                                class="icon-x-circle"></span></button>
                         <form action="">
                             <fieldset class="search-field">
                                 <label tabindex="0" for="search"></label>
-                                    <span class="icon-search"></span>
-                                    <input name="search" type="search" placeholder="Search entire store here..." aria-label="Search entire store here..." >
+                                <span class="icon-search"></span>
+                                <input name="search" type="search" placeholder="Search entire store here..."
+                                    aria-label="Search entire store here...">
                             </fieldset>
                         </form>
                     </div>
                 </li>
                 <li class="header__item">
-                    <button class="shopping-cart-button" onclick="showHideShoppingCartButton()"><span class="icon-shopping-cart"></span></button>
+                    <button class="shopping-cart-button" onclick="showHideShoppingCartButton()"><span
+                            class="icon-shopping-cart"></span></button>
                     <div class="shopping-cart">
-                        <button class="button--no-styles shopping-cart__close-button" onclick="showHideShoppingCartButton()">Close <span class="icon-x-circle"></span></button>
+                        <button class="button--no-styles shopping-cart__close-button"
+                            onclick="showHideShoppingCartButton()">Close <span class="icon-x-circle"></span></button>
                         <div class="shopping-cart__without-items">
                             <p>You have no items in your shopping cart</p>
                         </div>
@@ -56,29 +57,32 @@
                                 <li class="shopping-cart__item">
                                     <div class="shopping-cart__item-wrapper">
                                         <picture class="shopping-cart__item-image">
-                                            <source srcset="./assets/product-single/cart/frisbee-black-desktop.jpg" 
+                                            <source srcset="./assets/product-single/cart/frisbee-black-desktop.jpg"
                                                 media="min-width: 1024px" alt="Frisbee desktop image">
-                                            <source srcset="./assets/product-single/cart/frisbee-black-mob.jpg" alt="Frisbee mobile image">
-                                            <img src="./assets/product-single/cart/frisbee-black-desktop" alt="Frisbee mobile image">
+                                            <source srcset="./assets/product-single/cart/frisbee-black-mob.jpg"
+                                                alt="Frisbee mobile image">
+                                            <img src="./assets/product-single/cart/frisbee-black-desktop"
+                                                alt="Frisbee mobile image">
                                         </picture>
                                         <div class="shopping-cart__item-info">
-                                            <h2 class="shopping-cart__item-title"><a href="#">Innova Pulsar | 
-                                                Major League Ultimate ...</a>
+                                            <h2 class="shopping-cart__item-title"><a href="#">Innova Pulsar |
+                                                    Major League Ultimate ...</a>
                                             </h2>
                                             <p class="shopping-cart__item-options"><Strong>Color:</Strong> Black</p>
                                             <p class="shopping-cart__item-price"><Strong>$21.99</Strong></p>
-                                            <form action="" class="shopping-cart__quantity"> 
-                                                    <label tabindex="0" for="quantity"><strong>Qty:</strong> 
-                                                        <input name="quantity" type="number" min="1" value="1" aria-label="Enter number of items for purchase"> 
-                                                    </label>
+                                            <form action="" class="shopping-cart__quantity">
+                                                <label tabindex="0" for="quantity"><strong>Qty:</strong>
+                                                    <input name="quantity" type="number" min="1" value="1"
+                                                        aria-label="Enter number of items for purchase">
+                                                </label>
                                             </form>
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="shopping-cart__item-actions">
                                         <button><span class="icon-edit"></span></button>
-                                        <button class="button-remove"><span class="icon-trash"></span></button> 
+                                        <button class="button-remove"><span class="icon-trash"></span></button>
                                     </div>
-                                </li> 
+                                </li>
                             </ul>
                             <div class="shopping-cart__subtotal">
                                 <p>Cart Subtotal</p>
@@ -88,135 +92,168 @@
                                 <button class="button button--primary button-checkout">Proceed to Checkout</button>
                                 <a href="#" class="view-and-edit-cart">View and edit cart</a>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </li>
                 <li class="header__item">
-                    <button class="navigation-button" onclick="showHideNavigationButton()"><span class="icon-menu"></span></button>
+                    <button class="navigation-button" onclick="showHideNavigationButton()"><span
+                            class="icon-menu"></span></button>
                     <nav class="navigation">
-                        <button class="no-style-button navigation__close-button" onclick="showHideNavigationButton()">Close <span class="icon-x-circle"></span></button>
+                        <button class="no-style-button navigation__close-button"
+                            onclick="showHideNavigationButton()">Close <span class="icon-x-circle"></span></button>
                         <p class="navigation-title">Menu</p>
                         <ul class="navigation-list__level-1">
                             <li class="navigation-list__level-1-item">
                                 <h2 class="navigation-list__level-1-item--title frisbees__title">Frisbees</h2>
                                 <ul class="navigation-list__level-2 frisbees__expand-list">
                                     <li class="navigation-list__level-2-item">
-                                        <h3 class="navigation-list__level-2-item-title frisbees__expand-list--title-1"><span class="icon-plus-circle"></span> Ultimate Frisbee</h3>
+                                        <h3 class="navigation-list__level-2-item-title frisbees__expand-list--title-1">
+                                            <span class="icon-plus-circle"></span> Ultimate Frisbee</h3>
                                         <ul class="navigation-list__level-3 frisbees__expand-list--inner-1">
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Innova Pulsar</a></li>
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">XCOM 175G</a></li>
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Aviator - Marvel Captain America (Collector)</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Innova Pulsar</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">XCOM 175G</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Aviator - Marvel Captain
+                                                    America (Collector)</a></li>
                                         </ul>
                                     </li>
                                     <li class="navigation-list__level-2-item">
-                                        <h3 class="navigation-list__level-2-item-title frisbees__expand-list--title-2"><span class="icon-plus-circle"></span> Recreational</h3>
+                                        <h3 class="navigation-list__level-2-item-title frisbees__expand-list--title-2">
+                                            <span class="icon-plus-circle"></span> Recreational</h3>
                                         <ul class="navigation-list__level-3 frisbees__expand-list--inner-2">
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Nite Ize Flashflight</a></li>
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Yikun 100g KIDS</a></li> 
-                                        </ul> 
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Nite Ize Flashflight</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Yikun 100g KIDS</a></li>
+                                        </ul>
                                     </li>
                                     <li class="navigation-list__level-2-item">
-                                        <h3 class="navigation-list__level-2-item-title frisbees__expand-list--title-3"><span class="icon-plus-circle"></span> Contact Us</h3>
+                                        <h3 class="navigation-list__level-2-item-title frisbees__expand-list--title-3">
+                                            <span class="icon-plus-circle"></span> Contact Us</h3>
                                         <ul class="navigation-list__level-3 frisbees__expand-list--inner-3">
-                                            <li class="navigation-list__level-3-item"><span>Trg slobode  6</span></li>
+                                            <li class="navigation-list__level-3-item"><span>Trg slobode 6</span></li>
                                             <li class="navigation-list__level-3-item"><span>+385958811630</span></li>
-                                            <li class="navigation-list__level-3-item"><span>filip.svetlicic@gmail.com</span></li>
+                                            <li class="navigation-list__level-3-item">
+                                                <span>filip.svetlicic@gmail.com</span></li>
                                         </ul>
-                                    </li> 
+                                    </li>
                                 </ul>
                             </li>
                             <li class="navigation-list__level-1-item">
                                 <h2 class="navigation-list__level-1-item--title clothing__title">Clothing</h2>
                                 <ul class="navigation-list__level-2 clothing__expand-list">
                                     <li class="navigation-list__level-2-item">
-                                        <h3 class="navigation-list__level-2-item-title clothing__expand-list--title-1"><span class="icon-plus-circle"></span> Ultimate Frisbee</h3>
+                                        <h3 class="navigation-list__level-2-item-title clothing__expand-list--title-1">
+                                            <span class="icon-plus-circle"></span> Ultimate Frisbee</h3>
                                         <ul class="navigation-list__level-3 clothing__expand-list--inner-1">
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Innova Pulsar</a></li>
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">XCOM 175G</a></li>
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Aviator - Marvel Captain America (Collector)</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Innova Pulsar</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">XCOM 175G</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Aviator - Marvel Captain
+                                                    America (Collector)</a></li>
                                         </ul>
                                     </li>
                                     <li class="navigation-list__level-2-item">
-                                        <h3 class="navigation-list__level-2-item-title clothing__expand-list--title-2"><span class="icon-plus-circle"></span> Recreational</h3>
+                                        <h3 class="navigation-list__level-2-item-title clothing__expand-list--title-2">
+                                            <span class="icon-plus-circle"></span> Recreational</h3>
                                         <ul class="navigation-list__level-3 clothing__expand-list--inner-2">
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Nite Ize Flashflight</a></li>
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Yikun 100g KIDS</a></li> 
-                                        </ul> 
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Nite Ize Flashflight</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Yikun 100g KIDS</a></li>
+                                        </ul>
                                     </li>
                                     <li class="navigation-list__level-2-item">
-                                        <h3 class="navigation-list__level-2-item-title clothing__expand-list--title-3"><span class="icon-plus-circle"></span> Contact Us</h3>
+                                        <h3 class="navigation-list__level-2-item-title clothing__expand-list--title-3">
+                                            <span class="icon-plus-circle"></span> Contact Us</h3>
                                         <ul class="navigation-list__level-3 clothing__expand-list--inner-3">
-                                            <li class="navigation-list__level-3-item"><span>Trg slobode  6</span></li>
+                                            <li class="navigation-list__level-3-item"><span>Trg slobode 6</span></li>
                                             <li class="navigation-list__level-3-item"><span>+385958811630</span></li>
-                                            <li class="navigation-list__level-3-item"><span>filip.svetlicic@gmail.com</span></li>
+                                            <li class="navigation-list__level-3-item">
+                                                <span>filip.svetlicic@gmail.com</span></li>
                                         </ul>
-                                    </li> 
-                                </ul>  
+                                    </li>
+                                </ul>
                             </li>
                             <li class="navigation-list__level-1-item">
                                 <h2 class="navigation-list__level-1-item--title accessories__title">Accessories</h2>
                                 <ul class="navigation-list__level-2 accessories__expand-list">
                                     <li class="navigation-list__level-2-item">
-                                        <h3 class="navigation-list__level-2-item-title accessories__expand-list--title-1"><span class="icon-plus-circle"></span> Ultimate Frisbee</h3>
+                                        <h3
+                                            class="navigation-list__level-2-item-title accessories__expand-list--title-1">
+                                            <span class="icon-plus-circle"></span> Ultimate Frisbee</h3>
                                         <ul class="navigation-list__level-3 accessories__expand-list--inner-1">
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Innova Pulsar</a></li>
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">XCOM 175G</a></li>
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Aviator - Marvel Captain America (Collector)</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Innova Pulsar</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">XCOM 175G</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Aviator - Marvel Captain
+                                                    America (Collector)</a></li>
                                         </ul>
                                     </li>
                                     <li class="navigation-list__level-2-item">
-                                        <h3 class="navigation-list__level-2-item-title accessories__expand-list--title-2"><span class="icon-plus-circle"></span> Recreational</h3>
+                                        <h3
+                                            class="navigation-list__level-2-item-title accessories__expand-list--title-2">
+                                            <span class="icon-plus-circle"></span> Recreational</h3>
                                         <ul class="navigation-list__level-3 accessories__expand-list--inner-2">
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Nite Ize Flashflight</a></li>
-                                            <li class="navigation-list__level-3-item"><a href="./layout-category-listing.html">Yikun 100g KIDS</a></li> 
-                                        </ul> 
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Nite Ize Flashflight</a></li>
+                                            <li class="navigation-list__level-3-item"><a
+                                                    href="./layout-category-listing.html">Yikun 100g KIDS</a></li>
+                                        </ul>
                                     </li>
                                     <li class="navigation-list__level-2-item">
-                                        <h3 class="navigation-list__level-2-item-title accessories__expand-list--title-3"><span class="icon-plus-circle"></span> Contact Us</h3>
+                                        <h3
+                                            class="navigation-list__level-2-item-title accessories__expand-list--title-3">
+                                            <span class="icon-plus-circle"></span> Contact Us</h3>
                                         <ul class="navigation-list__level-3 accessories__expand-list--inner-3">
-                                            <li class="navigation-list__level-3-item"><span>Trg slobode  6</span></li>
+                                            <li class="navigation-list__level-3-item"><span>Trg slobode 6</span></li>
                                             <li class="navigation-list__level-3-item"><span>+385958811630</span></li>
-                                            <li class="navigation-list__level-3-item"><span>filip.svetlicic@gmail.com</span></li>
+                                            <li class="navigation-list__level-3-item">
+                                                <span>filip.svetlicic@gmail.com</span></li>
                                         </ul>
-                                    </li> 
-                                </ul> 
+                                    </li>
+                                </ul>
                             </li>
                             <li class="navigation-list__level-1-item">
-                                <h2 class="navigation-list__level-1-item--title">Contact Us</h2> 
-                            </li> 
+                                <h2 class="navigation-list__level-1-item--title">Contact Us</h2>
+                            </li>
                         </ul>
                     </nav>
                 </li>
             </ul>
-        </div> 
+        </div>
     </header>
 
     <ul class="breadcrumbs">
         <li class="breadcrumbs__item" aria-label="breadcrumb"><a href="./index.html" title="Grabsee Home">Home</a></li>
-        <li class="breadcrumbs__item" aria-label="breadcrumb"><a href="./layout-category-listing.html" title="Grabsee Main Category">Freesbe</a></li>
+        <li class="breadcrumbs__item" aria-label="breadcrumb"><a href="./layout-category-listing.html"
+                title="Grabsee Main Category">Freesbe</a></li>
         <li tabindex="0" class="breadcrumbs__item" aria-label="breadcrumb" aria-current="location">Ultimate Frisbee</li>
     </ul>
-    <main class="container product-container"> 
-        
+    <main class="container product-container">
+
         <div class="product-detail">
-            <picture class="product-detail__img img1 img1-show" >
-                <source srcset="./assets/product-single/frisbee-black-desktop.jpg" 
-                    media="(min-width: 1024px)"/>
+            <picture class="product-detail__img img1 img1-show">
+                <source srcset="./assets/product-single/frisbee-black-desktop.jpg" media="(min-width: 1024px)" />
                 <source srcset="./assets/product-single/frisbee-black-mob.jpg">
                 <img src="./assets/product-single/frisbee-black-mob.jpg" alt="Product image">
             </picture>
-            <picture class="product-detail__img img2" >
-                <source srcset="./assets/product-single/frisbee-orange-desktop.jpg" 
-                    media="(min-width: 1024px)"/>
+            <picture class="product-detail__img img2">
+                <source srcset="./assets/product-single/frisbee-orange-desktop.jpg" media="(min-width: 1024px)" />
                 <source srcset="./assets/product-single/frisbee-orange-mob.jpg">
                 <img src="./assets/product-single/frisbee-orange-mob.jpg" alt="Product image">
             </picture>
-            <picture class="product-detail__img img3" >
-                <source srcset="./assets/product-single/frisbee-white-desktop.jpg" 
-                    media="(min-width: 1024px)"/>
+            <picture class="product-detail__img img3">
+                <source srcset="./assets/product-single/frisbee-white-desktop.jpg" media="(min-width: 1024px)" />
                 <source srcset="./assets/product-single/frisbee-white-mob.jpg">
                 <img src="./assets/product-single/frisbee-white-mob.jpg" alt="Product image">
-            </picture> 
+            </picture>
 
             <ul class="product-detail__thumbnails">
                 <li onclick="displayBlackImage()">
@@ -224,7 +261,7 @@
                 </li>
                 <li onclick="displayOrangeImage()">
                     <img src="./assets/product-single/frisbee-orange-mob-thumb.jpg" alt="Product image thumbnail">
-                </li> 
+                </li>
                 <li onclick="displayWhiteImage()">
                     <img src="./assets/product-single/frisbee-white-mob-thumb.jpg" alt="Product image thumbnail">
                 </li>
@@ -250,9 +287,9 @@
                             <dd class="black-color"> </dd>
                             <dd class="blue-color"> </dd>
                             <dd class="pink-color"> </dd>
-                        </dl>  
+                        </dl>
                     </form>
-                </div> 
+                </div>
             </div>
             <div class="product-buy-options">
                 <fieldset class="product-qty">
@@ -260,7 +297,7 @@
                     <label for="qty">Qty:</label>
                     <input name="qty" type="number" value="1">
                 </fieldset>
-                
+
                 <button class="button button--primary shop-button" type="submit">Add to Cart</button>
             </div>
 
@@ -275,27 +312,33 @@
                         <span class="icon-bar-chart"></span> Add to Compare
                     </a>
                 </li>
-            </ul> 
-            
+            </ul>
+
         </div>
 
         <section class="product-long-info">
             <details open>
                 <summary>
-                    <h2 class="product-long-info__title" aria-labeledby="" aria-controls="details" aria-selected="" aria-expanded="true" tabindex="0">Details</h2>
+                    <h2 class="product-long-info__title" aria-labeledby="" aria-controls="details" aria-selected=""
+                        aria-expanded="true" tabindex="0">Details</h2>
                 </summary>
                 <div class="product-long-info__details" aria-labelledby="" tabindex="0">
                     <p>Note: Stamp colour on disc may vary from pictured image.</p>
-                    <p>This is not a Frisbee its a quality Flying Disc, if you dont know the difference think of the Frisbee as a toy and a Flying Disc as a quality piece of sports equipment.</p>
-                    <p>USA Ultimate approved for tournament play, the Pulsar is the official disc of Major League Ultimate. This disc is not just a competition disc. It is also perfect for freestyling at the beach or for a game of throw and catch in the backyard or park. The Pulsar is also approved for Super Class and PDGA disc golf use.</p>
+                    <p>This is not a Frisbee its a quality Flying Disc, if you dont know the difference think of the
+                        Frisbee as a toy and a Flying Disc as a quality piece of sports equipment.</p>
+                    <p>USA Ultimate approved for tournament play, the Pulsar is the official disc of Major League
+                        Ultimate. This disc is not just a competition disc. It is also perfect for freestyling at the
+                        beach or for a game of throw and catch in the backyard or park. The Pulsar is also approved for
+                        Super Class and PDGA disc golf use.</p>
                 </div>
             </details>
-            
+
             <details>
                 <summary>
-                    <h2 class="product-long-info__title" aria-labeledby="" aria-controls="description" aria-selected="" aria-expanded="true" tabindex="0">More information</h2>
+                    <h2 class="product-long-info__title" aria-labeledby="" aria-controls="description" aria-selected=""
+                        aria-expanded="true" tabindex="0">More information</h2>
                 </summary>
-                
+
                 <div class="product-long-info__table-details" aria-labelledby="" tabindex="0">
                     <table class="product-long-info__table">
                         <tr>
@@ -318,17 +361,19 @@
                 </div>
             </details>
         </section>
-    </main> 
+    </main>
 
     <footer class="footer">
         <section class="footer-top">
             <h2 class="footer-top__heading">Newsletter</h2>
-            <p tabindex="0" class="footer-top__text">Sign up for our newsletter and be the first to find out about new products, discounts and more.</p>
+            <p tabindex="0" class="footer-top__text">Sign up for our newsletter and be the first to find out about new
+                products, discounts and more.</p>
 
             <form name="newsletter" action="" method="GET">
                 <fieldset>
-                    <legend class="visually-hidden">Grabsee Newsletter Form</legend> 
-                    <label for="newsletter" tabindex="0" class="visually-hidden">Enter your email in order to become the Grabsee subscriber</label>
+                    <legend class="visually-hidden">Grabsee Newsletter Form</legend>
+                    <label for="newsletter" tabindex="0" class="visually-hidden">Enter your email in order to become the
+                        Grabsee subscriber</label>
 
                     <input placeholder="Enter your email address" name="newsletter" type="email" required />
                     <button type="submit" class="button button--primary button--subscribe">Subscribe</button>
@@ -338,7 +383,9 @@
 
         <section class="footer-mid">
             <details open>
-                <summary><h2 class="footer-mid__heading">Categories</h2></summary>
+                <summary>
+                    <h2 class="footer-mid__heading">Categories</h2>
+                </summary>
 
                 <ul>
                     <li>
@@ -357,21 +404,26 @@
             </details>
 
             <details open>
-                <summary><h2 class="footer-mid__heading">Contact us</h2></summary>
+                <summary>
+                    <h2 class="footer-mid__heading">Contact us</h2>
+                </summary>
 
                 <ul>
-                    <li tabindex="0"><address>Trg Slobode 6</address></li>
+                    <li tabindex="0">
+                        <address>Trg Slobode 6</address>
+                    </li>
                     <li><a href="tel:+385958811630">+385 95 8811630</a></li>
                     <li><a href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
                 </ul>
             </details>
-        </section>  
+        </section>
         <div class="footer-bottom">
             <small tabindex="0">Copyright &reg; 2021 Grabsbee</small>
-        </div> 
+        </div>
     </footer>
     <script src="main.js" async></script>
-    <script src="product-page.js" async></script> 
-    <script src="shop.js" async></script> 
+    <script src="product-page.js" async></script>
+    <script src="shop.js" async></script>
 </body>
+
 </html>

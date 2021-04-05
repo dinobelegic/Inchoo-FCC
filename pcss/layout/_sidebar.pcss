@@ -1,165 +1,157 @@
-.sidebar__shopping-options { 
-    position: absolute;
-    top: 0;
-    left: -100%;
-    padding-left: pxtorem(12px);
-    padding-right: pxtorem(12px);
-    background: white;
-    height: 80vh;
-    width: 100%;
+.sidebar__shopping-options {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  padding-left: pxtorem(12px);
+  padding-right: pxtorem(12px);
+  background: white;
+  height: 80vh;
+  width: 100%;
 
-    @media(--large) {
-        position: static; 
-        padding-left: 0;
-        padding-right: 0;
+  @media (--large) {
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
 
-        & h2 {
-            margin-top: 0;
-            margin-bottom: pxtorem(23px);
-            font-family: Open Sans; 
-            font-size: pxtorem(16px); 
-        }
-
-        & button {
-            display: none;
-        }
+    & h2 {
+      margin-top: 0;
+      margin-bottom: pxtorem(23px);
+      font-family: Open Sans;
+      font-size: pxtorem(16px);
     }
+
+    & button {
+      display: none;
+    }
+  }
 }
 
 .sidebar-show {
-    left: 0;
+  left: 0;
 }
 
 .sidebar__shopping-options h2 {
-    margin-top: pxtorem(51px);
-    margin-bottom: pxtorem(25px);
-    font-family: "Open Sans"; 
-    font-size: pxtorem(14px);
-    line-height: pxtorem(24px);
-    text-transform: uppercase;
-    color: var(--primary__color);
+  margin-top: pxtorem(51px);
+  margin-bottom: pxtorem(25px);
+  font-family: "Open Sans";
+  font-size: pxtorem(14px);
+  line-height: pxtorem(24px);
+  text-transform: uppercase;
+  color: var(--primary__color);
 }
 
 .sidebar__shopping-options > button {
-    position: absolute;
-    top: pxtorem(24px);
-    right: pxtorem(12px);
+  position: absolute;
+  top: pxtorem(24px);
+  right: pxtorem(12px);
 }
 
 .layered-nav-list__item--title {
-    height: pxtorem(42px);
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: pxtorem(12px);
-    line-height: pxtorem(24px);
-    padding-top: pxtorem(12px); 
-    letter-spacing: 0.05em;
-    text-transform: uppercase; 
-    border-bottom: 1px solid var(--neutral-10); 
-    color: var(--text__color);
+  height: pxtorem(42px);
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: pxtorem(12px);
+  line-height: pxtorem(24px);
+  padding-top: pxtorem(12px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--neutral-10);
+  color: var(--text__color);
+  position: relative;
+
+  &::after {
+    font-family: "Inchoo-Icons";
+    content: "\e909";
+    position: absolute;
+    top: pxtorem(12px);
+    right: 0;
+  }
+
+  @media (--large) {
+    height: pxtorem(48px);
+    padding-top: pxtorem(15px);
     position: relative;
+    border-bottom: 1px solid var(--neutral-10);
 
     &::after {
-        font-family: "Inchoo-Icons";
-        content: "\e909";
-        position: absolute;
-        top: pxtorem(12px);
-        right: 0;  
+      font-family: "Inchoo-Icons";
+      content: "\e909";
+      position: absolute;
+      top: pxtorem(15px);
+      right: 0;
     }
- 
-    @media (--large) {
-        height: pxtorem(48px);  
-        padding-top: pxtorem(15px);
-        position: relative; 
-        border-bottom: 1px solid var(--neutral-10);
-
-        &::after {
-            font-family: "Inchoo-Icons";
-            content: "\e909";
-            position: absolute;
-            top: pxtorem(15px);
-            right: 0;  
-        }  
-    }
+  }
 }
 
 .layered-nav-list__item--title h3 {
-    @media (--large) {
-        font-family: 'Anton';
-        font-weight: normal;
-        line-height: 1.5;
-        font-size: pxtorem(14px);
-        letter-spacing: 0.05em;
-    }
+  @media (--large) {
+    font-family: "Anton";
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: pxtorem(14px);
+    letter-spacing: 0.05em;
+  }
 }
-    
 
 .layered-nav-list__item--title:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .layered-nav-list__item--inner-list {
+  display: none;
+  @media (--large) {
     display: none;
-    @media (--large) {
-        display: none; 
-        padding-left: pxtorem(12px);
-        margin-top: pxtorem(9px);
-    }
+    padding-left: pxtorem(12px);
+    margin-top: pxtorem(9px);
+  }
 }
 
 .expand-sidebar {
+  height: 100%;
+  border-bottom: none;
+
+  @media (--large) {
     height: 100%;
     border-bottom: none;
-
-    @media (--large) {
-        height: 100%;
-        border-bottom: none;   
-    }
+  }
 }
 
-.expand-sidebar-innerlist { 
-        display: block;
-        padding-left: pxtorem(12px);
-        margin-top: pxtorem(9px); 
+.expand-sidebar-innerlist {
+  display: block;
+  padding-left: pxtorem(12px);
+  margin-top: pxtorem(9px);
 
-    @media (--large) {
-        display: block;
-        height: 100%;
-        font-family: Anton; 
-        font-weight: normal;
-        line-height: pxtorem(18px);   
-        position: relative;  
-    }
+  @media (--large) {
+    display: block;
+    height: 100%;
+    font-family: Anton;
+    font-weight: normal;
+    line-height: pxtorem(18px);
+    position: relative;
+  }
 }
 
 .inner-list__item {
-    height: 100%;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: pxtorem(12px);
-    line-height: pxtorem(24px);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--text__color);
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+  height: 100%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: pxtorem(12px);
+  line-height: pxtorem(24px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text__color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 
-    @media (--large) { 
-        padding-top: pxtorem(12px);   
-    }
-}
-
-.inner-list__item input[type=checkbox] {
-    height: pxtorem(10px);
-    position: absolute;
-    right: 0;
-
+  @media (--large) {
+    padding-top: pxtorem(12px);
+  }
 }
 
 .inner-list__item p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
